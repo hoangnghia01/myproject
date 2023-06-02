@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap"
 import "./Footer.css"
-import logo from "../logo/logo.jpg"
+import logo from "../logo/logo.png"
 import { Link } from "react-router-dom"
 
 import { AiOutlineRight } from 'react-icons/ai';

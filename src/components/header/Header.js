@@ -3,15 +3,26 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import { BsCart3 } from 'react-icons/bs';
-import { CgMenuRight } from 'react-icons/cg';
+import { BsCart3, BsMinecartLoaded } from 'react-icons/bs';
+import { CgMenuRight,CgEnter } from 'react-icons/cg';
 import { GrFormDown } from 'react-icons/gr';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BsMinecart } from 'react-icons/bs';
+import { BiRightArrowAlt } from 'react-icons/bi';
+import { CiBookmark } from 'react-icons/ci';
 
-import logo from "../logo/logo.jpg"
+import { MdOutlineAccountCircle } from 'react-icons/md';
+import { VscSearch } from 'react-icons/vsc';
+
+import logo from "../logo/logo.png"
 import "./Header.css"
+import { useContext } from 'react';
+import { AppContext } from '../../AppContext';
+
+
+
 export default function Header() {
+    const { handle_click, show, setShow, handle_click_cart, showcart, setShowcart } = useContext(AppContext)
     return (
 
         <Navbar expand="lg" className='navbar'>
@@ -20,16 +31,11 @@ export default function Header() {
                     <Link to={"/"} style={{ textDecoration: 'none' }} ><img src={logo} /></Link>
                 </div>
                 <div className='header_right'>
-                    
-                    
-
-
                     <Navbar.Collapse id="basic-navbar-nav">
                         <div className='menu'>
                             <ul>
-                                <li><Link to={"/"} style={{ textDecoration: 'none' }}><h3>Home</h3></Link></li>
-                                <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giai phap <span><GrFormDown /></span></h3>
-
+                                <li><Link to={"/"} style={{ textDecoration: 'none' }}><h3>Trang chủ</h3></Link></li>
+                                <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giải pháp <span><GrFormDown /></span></h3>
                                     <ul className='menu_child'>
                                         <li>Giai phap 1
                                             <ul className='menu_child-child'>
@@ -42,53 +48,68 @@ export default function Header() {
                                         <li>Giai phap 1</li>
                                         <li>Giai phap 1</li>
                                     </ul>
-
                                 </Link></li>
-
                                 <li><Link to={"/san-pham"} style={{ textDecoration: 'none' }} className='product'>
-                                    <h3>San pham <span><GrFormDown /></span></h3>
-
+                                    <h3>Sản phẩm <span><GrFormDown /></span></h3>
                                     <ul className='menu_child'>
                                         <li>San pham 1</li>
                                         <li>San pham 2 1</li>
                                         <li>San pham 3 1</li>
                                         <li>San pham 4</li>
                                     </ul>
-
                                 </Link></li>
-
-                                <li><Link to={"/lien-he"} style={{ textDecoration: 'none' }}><h3>Lien he</h3></Link></li>
+                                <li><Link to={"/lien-he"} style={{ textDecoration: 'none' }}><h3>Liên hệ</h3></Link></li>
                             </ul>
                         </div>
                     </Navbar.Collapse>
-                    <CgMenuRight className='menu_icon'/>
+                    {/* <CgMenuRight className='menu_icon' /> */}
                     <div className='search'>
-                        
-                        <button className='icon_search'><AiOutlineSearch /></button>
-                       
-                        
-                        <div className='container_search'>
-                           <Container>
-                            Nghix
-                           </Container>
+
+                        <button className='icon_search' onClick={handle_click}><AiOutlineSearch /></button>
+
+
+                        <div className={`container_search ${show ? "active" : ""}`}>
+                            
+                                <div className='con_search'>
+                                <Container>
+                                <div className='search_input'>
+                                    <AiOutlineSearch className='icon_search_input'/>
+                                    <input placeholder='Tìm kiếm' className='input' />
+                                </div>
+                                <div className='suggest'>
+                                    <p>Gợi ý</p>
+                                    <ul>
+                                        <Link to={"/"}> <li><BiRightArrowAlt/>    Mua sam truc tuyen</li></Link>
+                                        <Link to={"/"}> <li><BiRightArrowAlt/>    Mua sam truc tuyen</li></Link>
+                                        <Link to={"/"}> <li><BiRightArrowAlt/>    Mua sam truc tuyen</li></Link>
+                                        <Link to={"/"}> <li><BiRightArrowAlt/>    Mua sam truc tuyen</li></Link>
+                                        <Link to={"/"}> <li><BiRightArrowAlt/>    Mua sam truc tuyen</li></Link>
+                                    </ul>
+                                </div>
+                                </Container>
+                                </div>
+                            
                         </div>
-                        
+
                     </div>
                     <div className='shopping_cart'>
-
-                        <BsCart3 className='cart_icon' />
-                        <div className='container_cart'>
-                            <div className='product_in_cart'><BsMinecart /></div>
-                            <div className='total'>
-                                <h5>Tong cong:</h5>
-                                <h5>$0</h5>
+                        <button onClick={handle_click_cart}><BsCart3 className='cart_icon' /></button>
+                        
+                        <div className={`container_cart ${showcart ? "active1" : ""}`}>
+                            <div className='con_cart'>
+                            <Container>
+                                <h3>Túi của bạn trống.</h3>
+                                <p><Link>Đăng nhập</Link><span> để xem có sản phẩm nào đã lưu không?</span></p>
+                                <h5>Hồ sơ của tôi</h5>
+                                <ul>
+                                    <li><Link to={"/"}><BsMinecartLoaded/> <span>Đơn hàng</span></Link></li>
+                                    <li><Link to={"/"}><CiBookmark/> <span>Mục đã lưu</span></Link></li>
+                                    <li><Link to={"/"}><MdOutlineAccountCircle/> <span>Tài khoản</span></Link></li>
+                                    <li><Link to={"/"}><CgEnter/> <span>Đăng nhập</span></Link></li>
+                                </ul>
+                            </Container>
                             </div>
-                            <button><h5>Gio hang</h5></button>
                         </div>
-
-
-
-                        <p className='cart_item'>0</p>
 
                     </div>
                 </div>

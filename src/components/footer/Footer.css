@@ -72,3 +72,7 @@
     align-items: center;
     justify-content: center;
 }
+.footer_bot p{
+    margin: 0;
+    padding: 0;
+}

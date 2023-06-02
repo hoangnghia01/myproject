@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BsCart3 } from 'react-icons/bs';
 import "./Header.css"
-import logo from "../logo/logo.jpg"
+import logo from "../logo/logo.png"
 import { Link } from 'react-router-dom';
 function BasicExample() {
   return (
