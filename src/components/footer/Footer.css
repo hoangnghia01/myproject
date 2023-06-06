@@ -1,5 +1,5 @@
 .footer {
-    background: #ece5e5;
+    background: #F7FAFD;
     padding: 20px;
 
 }
@@ -78,11 +78,12 @@
 .footer_bot {
     width: 100%;
     text-align: center;
-    background: #f8f6f6;
+   
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 2px solid #ffffff;
 }
 
 .footer_bot p {

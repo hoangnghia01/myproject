@@ -22,7 +22,7 @@ import { AppContext } from '../../AppContext';
 
 
 export default function Header() {
-    const { handle_click, show, setShow, handle_click_cart, showcart, setShowcart , handle_click_menu, shownav, setShownav} = useContext(AppContext)
+    const { handle_click,handle_click_close, show, setShow, handle_click_cart,handle_click_cart_close, showcart, setShowcart , handle_click_menu,close_menu, shownav, setShownav} = useContext(AppContext)
     return (
 <div className='vav'>
         <Navbar expand="lg" className='navbar'>
@@ -34,7 +34,8 @@ export default function Header() {
                 <div className='header_right'>
                     {/* <Navbar.Collapse id="basic-navbar-nav"> */}
                     <div className={`menu ${shownav ? "activemenu" : ""}`}>
-                        <ul>
+                        
+                        <ul  onClick={close_menu}>
                             <li><Link to={"/"} style={{ textDecoration: 'none' }}><h3>Trang chủ</h3></Link></li>
                             <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giải pháp <span><GrFormDown /></span></h3>
                                 <ul className='menu_child'>
@@ -61,8 +62,10 @@ export default function Header() {
                             </Link></li>
                             <li><Link to={"/lien-he"} style={{ textDecoration: 'none' }}><h3>Liên hệ</h3></Link></li>
                         </ul>
+                       <div className='div_close' onClick={close_menu}></div>
                         
                     </div>
+                    
                     {/* </Navbar.Collapse> */}
                     {/* <CgMenuRight className='menu_icon' /> */}
                     <div className='header_right_icon'>
@@ -87,6 +90,9 @@ export default function Header() {
                                         </div>
                                     </Container>
                                 </div>
+                                <div className='con_search_close' onClick={handle_click_close}>
+
+                                </div>
 
                             </div>
 
@@ -108,6 +114,7 @@ export default function Header() {
                                         </ul>
                                     </Container>
                                 </div>
+                                <div className='con_cart_close' onClick={handle_click_cart_close}></div>
                             </div>
 
                         </div>
