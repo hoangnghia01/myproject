@@ -3,15 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-
     font-family: 'Nunito Sans', sans-serif;
 
 }
-
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .navbar {
     padding: 5px;
     background: #eff1f4;
     z-index: 100;
+    display: flex;
+    flex-wrap: unset;
+    /* position: absolute; */
 }
 
 .header_left {
@@ -20,19 +26,23 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-right: 80px;
+    margin-right: 20px;
 }
 
+.header_left a {
+    width: 100%;
 
+}
 
 .header_left img {
     width: 100%;
+
 }
 
 .header_right {
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -42,7 +52,7 @@
 
 .menu {
 
-    width: 60%;
+    width: 40%;
 
 }
 
@@ -149,6 +159,13 @@
     z-index: 100;
 }
 
+.header_right_icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
 .search {
     width: 5%;
 
@@ -171,7 +188,7 @@
     top: 100%;
     left: 0%;
     transform: translateX(0%);
-    transform: translateY(-130%);
+    transform: translateY(-250%);
     display: block;
     opacity: 0;
     transition: 0.5s;
@@ -231,14 +248,16 @@
     width: 100%;
     text-decoration: none;
     color: #505050;
-    
+
 }
-.suggest ul li{
+
+.suggest ul li {
     width: 100%;
     border-radius: 5px;
     padding-left: 5px;
 }
-.suggest ul li:hover{
+
+.suggest ul li:hover {
     background: #d4d4d4;
     color: #000;
 }
@@ -250,6 +269,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    width: 5%;
 }
 
 
@@ -280,7 +300,7 @@
     justify-content: center;
     transform: translateY(-130%);
     align-items: center;
-   
+
     border-radius: 5px;
     display: block;
     transition: 0.5s;
@@ -301,30 +321,134 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
-.con_cart{
-width: 100%;
-background: #fff;
-padding: 20px;
+
+.con_cart {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
 }
-.shopping_cart  h3{
+
+.shopping_cart h3 {
     margin: 20px 0;
 }
-.shopping_cart  h5{
+
+.shopping_cart h5 {
     margin: 20px 0;
 }
-.shopping_cart  ul{
+
+.shopping_cart ul {
     margin: 0;
     padding: 0 10px;
 }
-.shopping_cart  ul a{
+
+.shopping_cart ul a {
     text-decoration: none;
     font-size: 15px;
     color: #4e4d4d;
 }
 
-.shopping_cart  ul a:hover{
+.shopping_cart ul a:hover {
     color: #000;
 }
-.shopping_cart  ul a span{
-margin-left: 5px;
+
+.shopping_cart ul a span {
+    margin-left: 5px;
+}
+
+.nav_icon {
+    display: none;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+        width: 10%;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        background: #eff1f4;
+        
+        width: 50%;
+        height: 100vh;
+        padding: 20px;
+        transition: 0.5s;
+    }
+
+    .menu.activemenu {
+        top: 100%;
+        left: 0;
+        padding: 10px 0 0 30px;
+    }
+
+    .menu ul {
+        display: flex;
+        /* justify-content: flex-start; */
+        flex-direction: column;
+        align-items: start;
+    }
+
+
+    .header_left {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header_left img {
+        width: 100%;
+    }
+
+    .header_right {
+        width: 15%;
+    }
+
+    .header_right_icon {
+        width: 100%;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .shopping_cart {
+        width: 50%;
+    }
+
+    .container_con_search {
+        display: block;
+    }
+
+    .container_con_cart {
+        display: block;
+    }
+
+    .nav_icon {
+        display: flex;
+        width: 20%;
+        align-items: start;
+        justify-content: left;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .header_left {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .header_right {
+        width: 20%;
+    }
 }

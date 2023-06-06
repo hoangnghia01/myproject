@@ -10,8 +10,12 @@ export const AppProvider = ({ children }) => {
     const handle_click_cart = () =>{
         setShowcart(!showcart)
     }
+    const [shownav, setShownav] = useState(false)
+    const handle_click_menu = () =>{
+        setShownav(!shownav)
+    }
     return (
-        <AppContext.Provider value={{ handle_click, show, setShow, handle_click_cart,  showcart, setShowcart}}>
+        <AppContext.Provider value={{ handle_click, show, setShow, handle_click_cart,  showcart, setShowcart, handle_click_menu, shownav, setShownav}}>
             {children}
         </AppContext.Provider>
     )
