@@ -1,17 +1,21 @@
 main {
     width: 100%;
-    height: 400vh;
+    
 }
 
 .slider {
     width: 100%;
-    /* height: 85vh;
-    background: violet; */
+    height: 90vh;
+    background: rgb(255, 255, 255);
     position: relative;
+    overflow: hidden;
 }
 
 .slider img {
-    width: 100%;
+    width: 90%;
+    position: absolute;
+    top: -10%;
+    right: 0%;
 }
 
 /* .con_slider{
@@ -29,7 +33,43 @@ height: 85vh;
     top: 30%;
 
 }
+.content_slider{
+width: 100%;
+position: absolute;
+top: 25%;
 
+line-height: 30px;
+
+}
+.con_content_slider{
+    width: 50%;
+    
+}
+.content_slider .con_content_slider  h2{
+line-height: 50px;
+}
+.content_slider .con_content_slider  p{
+    line-height: 30px;
+    }
+    .content_slider .con_content_slider  h4{
+        color: #eb6424;
+    }
+.content_slider .con_content_slider  a{
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #eb6424, #fbba72);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px 0 25px 25px;
+    margin-top: 20px;
+}
+.content_slider a:hover{
+    background: linear-gradient(-45deg, #eb6424, #fbba72); 
+}
 .info_item .learn_more {
     width: 180px;
     height: 50px;
@@ -84,19 +124,31 @@ height: 85vh;
     margin-bottom: 20px;
 
 }
-
+.reasons .reason h6{
+font-size: 18px;
+color: #3B566E;
+margin-bottom: 10px;
+}
+.reasons .reason p{
+    font-size: 14px;
+    color: #6F8BA4;
+    }
 .reasons .reason:hover {
     background: linear-gradient(135deg, #eb6424, #fbba72);
 
 
 }
 
-.reasons .reason:hover a {
-    color: #fff;
+.reasons .reason:hover h6 {
+    color: #fff; 
+   
+}
+.reasons .reason:hover p {
+    color: #fff; 
 }
 
 .reasons .reason:hover .reason_icon {
-    background: #fff;
+    background: #fff7f5;
     color: #000;
 }
 
@@ -121,44 +173,84 @@ height: 85vh;
 .solusion_home {
     background: #F7FAFD;
     width: 100%;
-    height: 50vh;
+   
+    display: block;
+    
 
 }
 
 .solusion_home .solusion_home_hospital {
-    padding: 50px 0;
+    /* padding: 70px 0; */
     width: 100%;
+    height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.solusion_home .solusion_home_hospital .con_solusion_home_hospital{
+.solusion_home .solusion_home_hospital .con_solusion_home{
 display: flex;
 }
-.solusion_home .solusion_home_hospital .solusion_home_hospital_left {
-    width: 50%;
+.solusion_home .solusion_home_restaurant {
+    /* padding: 70px 0; */
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.solusion_home .solusion_home_hospital .solusion_home_hospital_left ul {
+.solusion_home .solusion_home_pager {
+    /* padding: 70px 0; */
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solusion_home .con_solusion_home{
+display: flex;
+}
+.solusion_home .solusion_home_info {
+    width: 50%;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.solusion_home  .solusion_home_info h2{
+    font-size: 28px;
+    color: #3B566E;
+    margin-bottom: 30px;
+}
+.solusion_home .solusion_home_info p{
+    font-size: 16px;
+color: #6F8BA4;
+line-height: 30px;
+}
+
+.solusion_home .solusion_home_info ul {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
-.solusion_home .solusion_home_hospital .solusion_home_hospital_left li {
-    width: 45%;
+.solusion_home .solusion_home_info li {
+    width: 47%;
 }
 
-.solusion_home .solusion_home_hospital .solusion_home_hospital_left li:hover a {
+.solusion_home  .solusion_home_info li:hover a {
     padding-left: 30px;
 }
 
-.solusion_home .solusion_home_hospital .solusion_home_hospital_left a {
+.solusion_home  .solusion_home_info a {
     width: 100%;
     height: 40px;
-    margin: 10px;
+    margin: 10px 0;
     background: #fff;
     border: none;
     border-radius: 20px 0 20px 20px;
@@ -169,19 +261,22 @@ display: flex;
     justify-content: left;
     align-items: center;
     padding-left: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.solusion_home .solusion_home_hospital .solusion_home_hospital_left a:hover {
+.solusion_home .solusion_home_info a:hover {
     background: linear-gradient(-45deg, #eb6424, #fbba72);
     color: #fff;
 }
 
-.solusion_home .solusion_home_hospital .solusion_home_hospital_left a span {
+.solusion_home  .solusion_home_info a span {
     margin-left: 5px;
 }
-.solusion_home .solusion_home_hospital .solusion_home_hospital_right{
+.solusion_home  .solusion_home_img{
     width: 50%;
-    background: rgb(212, 147, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media only screen and (max-width: 992px) {
     .solusion_home .solusion_home_hospital {
@@ -192,26 +287,50 @@ display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .solusion_home .solusion_home_hospital .solusion_home_hospital_left {
+    .solusion_home  .solusion_home_info {
         width: 100%;
     }
 }
+@media only screen and (max-width: 992px) {
+    .slider{
+        height: 60vh;
+    }
+}
 @media only screen and (max-width: 768px) {
+    .slider{
+        height: 55vh;
+    }
+    .slider .content_slider{
+        width: 100%;
+        position: absolute;
+        top: 35%;
+        line-height: 30px;
+        
+        }
+        .slider img {
+            width: 115%;}
+        .con_content_slider{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
     .reasons {
         justify-content: center;
     }
     .reasons .reason {
         width: 80%;
     }
-    .solusion_home .solusion_home_hospital .solusion_home_hospital_left ul {
+    .solusion_home .solusion_home_info ul {
        
         display: block;
     }
-    .solusion_home .solusion_home_hospital .solusion_home_hospital_left li {
+    .solusion_home .solusion_home_info li {
         width: 100%;
         margin: 15px 0;
     }
-    .solusion_home .solusion_home_hospital .solusion_home_hospital_left a{
+    .solusion_home .solusion_home_info a{
         margin: 0;
     }
    

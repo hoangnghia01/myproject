@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import { BsCart3, BsMinecartLoaded } from 'react-icons/bs';
+import { BsBag, BsMinecartLoaded } from 'react-icons/bs';
 import { CgMenuLeft, CgEnter } from 'react-icons/cg';
 import { GrFormDown } from 'react-icons/gr';
 import { AiOutlineSearch } from 'react-icons/ai';
@@ -22,10 +22,11 @@ import { AppContext } from '../../AppContext';
 
 
 export default function Header() {
-    const { handle_click,handle_click_close, show, setShow, handle_click_cart,handle_click_cart_close, showcart, setShowcart , handle_click_menu,close_menu, shownav, setShownav} = useContext(AppContext)
+    const { handle_click,handle_click_close, show, setShow, handle_click_cart,handle_click_cart_close, showcart, setShowcart , handle_click_menu,close_menu, shownav, setShownav
+        , backrgoudNav, setBackrgoudNav} = useContext(AppContext)
     return (
 <div className='vav'>
-        <Navbar expand="lg" className='navbar'>
+        <Navbar expand="lg" className={`navbar ${backrgoudNav? "setbackgroud" : ""}`} >
             <Container className='container'>
                 <CgMenuLeft className='nav_icon' onClick={handle_click_menu}/>
                 <div className='header_left'>
@@ -39,16 +40,19 @@ export default function Header() {
                             <li><Link to={"/"} style={{ textDecoration: 'none' }}><h3>Trang chủ</h3></Link></li>
                             <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giải pháp <span><GrFormDown /></span></h3>
                                 <ul className='menu_child'>
-                                    <li>Giai phap 1
+                                    <li>Giải pháp cho bệnh viện
                                         <ul className='menu_child-child'>
                                             <li>ggggggggg1</li>
                                             <li>ggg1</li>
                                             <li>ggg1</li>
                                         </ul>
                                     </li>
-                                    <li>Giai phap 1</li>
-                                    <li>Giai phap 1</li>
-                                    <li>Giai phap 1</li>
+                                    <li>Giải pháp cho nhà hàng</li>
+                                    <li>Giải pháp chuông gọi trong nhà máy</li>
+                                    <li>Giải pháp tự phục vụ</li>
+                                    <li>Giải pháp cảnh báo nhiệt độ - độ ẩm</li>
+                                    <li>Giải pháp Camera an ninh</li>
+                                    <li>Bộ đàm</li>
                                 </ul>
                             </Link></li>
                             <li><Link to={"/san-pham"} style={{ textDecoration: 'none' }} className='product'>
@@ -98,7 +102,7 @@ export default function Header() {
 
                         </div>
                         <div className='shopping_cart'>
-                            <button onClick={handle_click_cart}><BsCart3 className='cart_icon' /></button>
+                            <button onClick={handle_click_cart}><BsBag className='cart_icon' /></button>
 
                             <div className={`container_cart ${showcart ? "active1" : ""}`}>
                                 <div className='con_cart'>
