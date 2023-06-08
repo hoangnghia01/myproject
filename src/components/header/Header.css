@@ -481,6 +481,9 @@ height: 50vh;
 }
 
 @media only screen and (max-width: 481px) {
+    .search {
+        width: auto;
+    }
     .header_right {
         width: 20%;
     }
