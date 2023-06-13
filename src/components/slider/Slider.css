@@ -1,0 +1,105 @@
+.slider {
+
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-product {
+  display: flex;
+  transition: transform 0.3s ease;
+  align-items: center;
+  height: 500px;
+}
+
+.baner_product {
+  margin-right: 30px;
+}
+
+/* Thiết kế cho slide đầu tiên */
+.con_baner_product_dau {
+  background-color: #f1f1f1;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  width: 350px;
+ 
+}
+
+/* Thiết kế cho slide cuối */
+.con_baner_product_cuoi {
+  background-color: #f1f1f1;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+/* Thiết kế cho slide sản phẩm */
+.baner_product .product {
+  /* background-color: #f1f1f1; */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  /* border: 2px solid #000; */
+  width: 300px;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* overflow: hidden; */
+  background: none;
+}
+
+/* .baner_product .product img {
+  display: none;
+} */
+
+
+
+/* Thiết kế cho slide được hiển thị */
+.active {
+  border: 2px solid #ff0000;
+  /* Ví dụ: đường viền đỏ cho slide hiện tại */
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: none;
+  background: #f6f6f6;
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+  display: block;
+  transition: 0.5s;
+  opacity: 0;
+  scale: 0.5;
+}
+
+.prev-button {
+  left: 5%;
+
+}
+
+.next-button {
+  right: 5%;
+
+}
+
+.slider:hover .next-button {
+  display: block;
+  opacity: 1;
+  scale: 1;
+}
+
+.slider:hover .prev-button {
+  display: block;
+  opacity: 1;
+  scale: 1;
+}

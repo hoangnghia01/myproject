@@ -26,6 +26,7 @@ export default function Header() {
         , backrgoudNav, setBackrgoudNav} = useContext(AppContext)
     return (
 <div className='vav'>
+    <div className='header'>
         <Navbar expand="lg" className={`navbar ${backrgoudNav? "setbackgroud" : ""}`} >
             <Container className='container'>
                 <CgMenuLeft className='nav_icon' onClick={handle_click_menu}/>
@@ -58,10 +59,40 @@ export default function Header() {
                             <li><Link to={"/san-pham"} style={{ textDecoration: 'none' }} className='product'>
                                 <h3>Sản phẩm <span><GrFormDown /></span></h3>
                                 <ul className='menu_child'>
-                                    <li>San pham 1</li>
-                                    <li>San pham 2 1</li>
-                                    <li>San pham 3 1</li>
-                                    <li>San pham 4</li>
+                                    <li><Link to={"/san-pham/chuong-goi-phuc-vu"}>Chuông gọi phục vụ</Link>
+                                    <ul className='menu_child-child'>
+                                            <li>Hãng Syscall Hàn Quốc</li>
+                                            <li>Hãng Ringo</li>
+                                            <li>Hãng Quickbell</li>
+                                            <li>Hãng JT</li>
+                                        </ul>
+                                    </li>
+                                    <li>Chuông báo gọi y tá
+                                    <ul className='menu_child-child'>
+                                            <li>Chuông gọi y tá không dây</li>
+                                            <li>Chuông gọi y tá có dây</li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>Thẻ rung tự phục vụ
+                                    <ul className='menu_child-child'>
+                                            <li>Hãng Syscall Hàn Quốc</li>
+                                            <li>Hãng JT</li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>Hệ thống định vị bàn khách ngồi</li>
+                                    <li>Hệ thống gọi số thứ tự
+                                    <ul className='menu_child-child'>
+                                            <li>Hãng Syscall Hàn Quốc</li>
+                                            <li>Hãng JT</li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>Thiết bị cảnh báo nhiệt độ - độ ẩm</li>
+                                    <li>Bộ đàm</li>
+                                    <li>Camera an ninh</li>
+                                    <li>Phụ kiện</li>
                                 </ul>
                             </Link></li>
                             <li><Link to={"/lien-he"} style={{ textDecoration: 'none' }}><h3>Liên hệ</h3></Link></li>
@@ -131,6 +162,6 @@ export default function Header() {
             </div>
         </Navbar>
         </div>
-
+        </div>
     )
 }

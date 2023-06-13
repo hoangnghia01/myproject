@@ -10,21 +10,27 @@
     
     width: 100%;
     height: 10vh;
-    top: 0;
-    left: 0;
+  
+   
+    
+}
+.header{
+    width: 100%;
+    position: fixed;
     z-index: 10;
-    position: fixed
 }
 .navbar {
     padding: 5px;
     height: 11vh;
     background: none;
+    
     z-index: 100;
     display: flex;
     flex-wrap: unset;
     transition: background-color 0.3s ease; /* Thêm transition để tạo hiệu ứng mượt */
     
 }
+
   
   .navbar.setbackgroud {
     background: rgb(255, 255, 255);
@@ -129,6 +135,10 @@
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.4s;
+}
+.menu .menu_child a{
+    text-align: left;
+    text-decoration: none;
 }
 
 .menu .menu_child li {

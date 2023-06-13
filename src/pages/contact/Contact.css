@@ -1,0 +1,46 @@
+.form_contact{
+    width: 50%;
+    
+}
+.form_label{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.form_label h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.form_label h5{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.container_form{
+width: 100%;
+justify-content: center;
+align-items: center;
+display: flex;
+padding: 80px 0;
+}
+.form_group{
+    margin-bottom: 30px;
+}
+.form_control{
+    height: 50px;
+}
+.form_control_mes{
+    height: 100px;
+}
+.submit_form{
+    background: linear-gradient(-45deg, #eb6424, #fbba72);
+    color: #fff;
+    border-radius: 25px 0 25px 25px;
+    width: 180px;
+    height: 50px;
+    border: none;
+}

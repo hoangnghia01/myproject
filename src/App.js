@@ -5,18 +5,29 @@ import Home from './pages/home/Home';
 import Solutions from './pages/solusions/Solutions';
 import Products from './components/products/Products';
 import Contact from './pages/contact/Contact';
+import Chuonggoiphucvu from './pages/products/chuonggoiphucvu/Chuonggoiphucvu';
 import { AppProvider } from './AppContext';
+import Aos from 'aos';
+import { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    Aos.init(); 
+  }, []);
   return (
     <div>
-    <AppProvider>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/giai-phap' element={<Solutions />}></Route>
-        <Route path='/san-pham' element={<Products />}></Route>
-        <Route path='/lien-he' element={<Contact />}></Route>
-      </Routes>
-    </AppProvider>
+      <AppProvider>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/giai-phap' element={<Solutions />}>
+
+          </Route>
+          <Route path='/san-pham' element={<Products />}>
+
+          </Route>
+          <Route path='/san-pham/chuong-goi-phuc-vu' element={<Chuonggoiphucvu />}></Route>
+          <Route path='/lien-he' element={<Contact />}></Route>
+        </Routes>
+      </AppProvider>
     </div>
   );
 }
