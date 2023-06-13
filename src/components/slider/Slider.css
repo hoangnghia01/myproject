@@ -2,6 +2,7 @@
 
   overflow: hidden;
   position: relative;
+
 }
 
 .slider-product {
@@ -9,10 +10,12 @@
   transition: transform 0.3s ease;
   align-items: center;
   height: 500px;
+  
 }
 
 .baner_product {
   margin-right: 30px;
+  transform: translateX(calc(max(1400px, 100vw)/2 - 650px));
 }
 
 /* Thiết kế cho slide đầu tiên */
@@ -24,7 +27,7 @@
   justify-content: center;
   border: 1px solid red;
   width: 350px;
- 
+  
 }
 
 /* Thiết kế cho slide cuối */
@@ -60,10 +63,10 @@
 
 
 /* Thiết kế cho slide được hiển thị */
-.active {
+/* .active {
   border: 2px solid #ff0000;
-  /* Ví dụ: đường viền đỏ cho slide hiện tại */
-}
+  Ví dụ: đường viền đỏ cho slide hiện tại
+} */
 
 .prev-button,
 .next-button {

@@ -11,7 +11,7 @@ export default function Products() {
 
     return (
         <div>
-            <Header />
+           
 
             <div>
                

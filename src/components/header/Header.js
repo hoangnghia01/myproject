@@ -41,7 +41,7 @@ export default function Header() {
                             <li><Link to={"/"} style={{ textDecoration: 'none' }}><h3>Trang chủ</h3></Link></li>
                             <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giải pháp <span><GrFormDown /></span></h3>
                                 <ul className='menu_child'>
-                                    <li>Giải pháp cho bệnh viện
+                                    <li><Link to={"/giai-phap/giai-phap-cho-benh-vien"}>Giải pháp cho bệnh viện</Link>
                                         <ul className='menu_child-child'>
                                             <li>ggggggggg1</li>
                                             <li>ggg1</li>
@@ -95,6 +95,7 @@ export default function Header() {
                                     <li>Phụ kiện</li>
                                 </ul>
                             </Link></li>
+                            <li><Link to={"/lien-he"} style={{ textDecoration: 'none' }}><h3>Blog</h3></Link></li>
                             <li><Link to={"/lien-he"} style={{ textDecoration: 'none' }}><h3>Liên hệ</h3></Link></li>
                         </ul>
                        <div className='div_close' onClick={close_menu}></div>

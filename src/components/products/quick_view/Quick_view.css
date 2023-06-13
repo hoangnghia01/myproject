@@ -1,0 +1,8 @@
+.container_quick_view{
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    background: orchid;
+    top: 0;
+    left: 0;
+    }

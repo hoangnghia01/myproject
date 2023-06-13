@@ -12,18 +12,20 @@ export default function Chuonggoiphucvu() {
     
     return (
         <div>
-            <Header />
-            <Container>
+          
+           
                 <div className="con_chuonggoiphucvu">
                     <div className="baner_chuonggoi">
                         <h1>Chuông gọi phục vụ</h1>
                     </div>
                     <div className="list_chuonggoiphucvu">
                         <div className="brand">
+                            <Container>
                             <h2>
                                 Hãng Syscall Hàn Quốc
                             </h2>
                             <h3>Nút chuông gọi</h3>
+                            </Container>
                             <div className="lider_sanpham_nut">
                             <Slider product={nutchuongs} />
                             </div>
@@ -36,7 +38,7 @@ export default function Chuonggoiphucvu() {
                     </div>
                 </div>
 
-            </Container>
+           
         </div>
     )
 }

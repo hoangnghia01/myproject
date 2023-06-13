@@ -29,6 +29,9 @@ padding: 80px 0;
 }
 .form_group{
     margin-bottom: 30px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
 }
 .form_control{
     height: 50px;
@@ -43,4 +46,27 @@ padding: 80px 0;
     width: 180px;
     height: 50px;
     border: none;
+}
+.form_contact_input{
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.form_contact_input input{
+    padding: 10px ;
+}
+.form_contact_input textarea{
+    height: 100px;
+    padding: 10px ;
+}
+.button_send{
+    width: 80%;
+    color: #fff;
+    border: none;
+    height: 40px;
+    background: #eb6424;
+    cursor: pointer;
+    border-radius: 5px;
 }

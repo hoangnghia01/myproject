@@ -17,7 +17,7 @@ import logo from "../../components/logo/logo.png"
 import logohoanmy from "../../components/logo/logo_doitac/logo_bv_hoan_my.png"
 import highland from "../../components/logo/logo_doitac/Highlands-Coffee-ogo.png"
 import logo_bv from "../../components/logo/logo_doitac/logo_bv.jpg"
-import logo_bv_auco from "../../components/logo/logo_doitac/logo_bv_âu cơ.png"
+// import logo_bv_auco from "../../components/logo/logo_doitac/logo_bv_âu cơ.png"
 import logo_emart from "../../components/logo/logo_doitac/logo_emart.png"
 import logo_jollibe from "../../components/logo/logo_doitac/logo_jollibe.jpg"
 import logo_king_cf from "../../components/logo/logo_doitac/logo_king_cf.png"
@@ -41,11 +41,11 @@ import Slider from "../../components/slider/Slider"
 const images = [
     logohoanmy,
     highland,
-    logo_bv_auco,
+    // logo_bv_auco,
 
     logo_emart,
     logo_jollibe,
-
+    logo_emart,
     logo_vinamilk,
     logo_phuclong,
     logo_tch
@@ -55,7 +55,7 @@ export default function Home() {
     
     return (
         <div>
-            <Header />
+            {/* <Header /> */}
             <ScrollToTop/>
             {/* <Headers/> */}
             <main>
@@ -300,7 +300,7 @@ export default function Home() {
 
                 </div>
             </main>
-            <Footer />
+            
         </div>
     )
 }

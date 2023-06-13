@@ -8,24 +8,38 @@ import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import "./Contact.css"
 import { Container } from 'react-bootstrap';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 function FormExample() {
     const [validated, setValidated] = useState(false);
 
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
+    // const handleSubmit = (event) => {
+    //     const form = event.currentTarget;
+    //     if (form.checkValidity() === false) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //     }
 
-        setValidated(true);
+    //     setValidated(true);
+    //     emailjs.sendForm('service_21zch1a', 'template_n549ri7', form.current, '8BaRor5DETaDNRpiu')
+    // };
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_21zch1a', 'template_n549ri7', form.current, '8BaRor5DETaDNRpiu')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
-
     return (
         <div>
-            <Header />
+           
             <Container className='container_form'>
-            <Form noValidate validated={validated} onSubmit={handleSubmit} className='form_contact'>
+                {/* <Form noValidate validated={validated} onSubmit={handleSubmit} className='form_contact' ref={form}>
                <div className='form_label'>
                <h1>Liên hệ với chúng tôi</h1>
                 <h5>Vui lòng liên hệ với chúng tôi nếu có bất kỳ câu hỏi hoặc thắc mắc nào.</h5>
@@ -74,9 +88,31 @@ function FormExample() {
                 </Row>
 
                 <Button type="submit" className='submit_form'>Submit form</Button>
-            </Form>
+            </Form> */}
+                <div className='form_contact'>
+                    <div className='form_label'>
+                        <h1>Liên hệ với chúng tôi</h1>
+                        <h5>Vui lòng liên hệ với chúng tôi nếu có bất kỳ câu hỏi hoặc thắc mắc nào.</h5>
+                    </div>
+                    <form ref={form} onSubmit={sendEmail} className='form_contact_input'>
+                        <div className='form_group'>
+                            <label>Name*</label>
+                            <input type="text" name="user_name" placeholder="Nhập tên"/>
+                        </div>
+
+                        <div className='form_group'>
+                            <label>Email*</label>
+                            <input type="email" name="user_email" placeholder="Nhập email"/>
+                        </div>
+                        <div className='form_group'>
+                            <label>Message*</label>
+                            <textarea name="message" placeholder="Nhập tin nhan cho chung toi"/>
+                        </div>
+                        <input type="submit" value="Send" className='button_send' />
+                    </form>
+                </div>
             </Container>
-            <Footer />
+           
         </div>
     );
 }

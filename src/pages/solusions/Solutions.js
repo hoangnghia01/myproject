@@ -2,7 +2,7 @@ import Header from "../../components/header/Header"
 export default function Solutions(){
     return(
        <div>
-        <Header/>
+        {/* <Header/> */}
         Nghia hoang
        </div>
     )
