@@ -1,5 +1,6 @@
 import { Button } from "bootstrap";
 import "./Card_product.css"
+import { Link } from "react-router-dom";
 export default function Card_product(props) {
     const { product } = props;
     return (
@@ -10,11 +11,11 @@ export default function Card_product(props) {
 
                 </div>
                 <div className="content_cart_product">
-                    <div className="product_name"><h5>{product ? product.name : ""}</h5></div>
+                    <Link to={`/san-pham/${product.id}`} className="product_name"><h5>{product ? product.name : ""}</h5></Link>
                     <div className="product_price"><span>Giá: </span>{product ? product.price : ""} <span>đ</span></div>
                     <div className="product_code"><span>Mã sản phẩm: </span>{product ? product.product_code : ""}</div>
                     <div className="product_label">{product ? product.label : ""}</div>
-                    <div><button className="add_cart">Thêm vào giỏ hàng</button></div>
+                    <Link to={`/san-pham/${product.id}`}><button className="add_cart">Thêm vào giỏ hàng</button></Link>
                 </div>
 
             </div>

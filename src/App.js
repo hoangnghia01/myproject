@@ -7,11 +7,13 @@ import Products from './components/products/Products';
 import Contact from './pages/contact/Contact';
 import Chuonggoiphucvu from './pages/products/chuonggoiphucvu/Chuonggoiphucvu';
 import Nursecall_solusion from './pages/solusions/nursecall_solusion/Nursecall_solusion';
+import Blog from './pages/blog/Blog';
 import { AppProvider } from './AppContext';
 import Aos from 'aos';
 import { useEffect } from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import Product_ditail from './pages/products/product_ditail/Product_ditail';
 function App() {
   useEffect(() => {
     Aos.init();
@@ -30,8 +32,9 @@ function App() {
           <Route path='/san-pham' element={<Products />}>
 
           </Route>  
-          <Route path='/san-pham/:id' element={<Chuonggoiphucvu />}></Route>
+          <Route path='/san-pham/:id' element={<Product_ditail />}></Route>
           <Route path='/san-pham/chuong-goi-phuc-vu' element={<Chuonggoiphucvu />}></Route>
+          <Route path='/blog' element={<Blog />}></Route>
           <Route path='/lien-he' element={<Contact />}></Route>
         </Routes>
         <Footer/>

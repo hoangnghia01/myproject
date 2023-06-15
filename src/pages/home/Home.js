@@ -26,13 +26,13 @@ import logo_vinamilk from "../../components/logo/logo_doitac/logo_vinamilk.png"
 import logo_phuclong from "../../components/logo/logo_doitac/phuc_long.jpg"
 import logo_tch from "../../components/logo/logo_doitac/the_coffee_house_logo.jpg"
 import { useContext } from "react"
-import AppContext from "antd/es/app/context"
+import { AppContext } from "../../AppContext"
 import { CgMenuLeft } from 'react-icons/cg';
 import ScrollToTop from "../../components/scrolltotop/ScrollToTop"
-
-
-
-
+import baner_nhietdo from "../../components/imgs/blog_img/img4.png"
+import baner_nhamay from "../../components/imgs/blog_img/img5.png"
+import baner_camera from "../../components/imgs/blog_img/img6.png"
+import baner_bodam from "../../components/imgs/blog_img/img7.png"
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -51,12 +51,12 @@ const images = [
     logo_tch
 ]
 export default function Home() {
+    const { blog } = useContext(AppContext)
 
-    
     return (
         <div>
             {/* <Header /> */}
-            <ScrollToTop/>
+            <ScrollToTop />
             {/* <Headers/> */}
             <main>
                 <div>
@@ -74,7 +74,7 @@ export default function Home() {
                             </Container>
                         </div>
                     </div>
-                    
+
                     <div className="why_choose">
 
                         <div className="con_why_choose">
@@ -193,44 +193,44 @@ export default function Home() {
                                     <p>Chúng tôi cung cấp một loạt các giải pháp công nghệ để nâng cao hiệu suất và trải nghiệm khách hàng. Dưới đây là một số ví dụ về các giải pháp khác mà chúng tôi cung cấp:</p>
                                 </div>
                                 <div className="solusion_other_con">
-                                    <div className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1000">
-                                        <div className="solusion_other_con_card_img">img</div>
+                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1000">
+                                        <div className="solusion_other_con_card_img"><img src={baner_nhamay}/></div>
                                         <div className="solusion_other_con_card_title">
-                                            <h5>Solusion</h5>
+                                            <h5>Chuông gọi nhà máy</h5>
                                         </div>
                                         <div className="solusion_other_con_card_content">
-                                            <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+                                            <p>Để giải quyết và ứng phó với các sự cố nhanh chóng và hiệu quả là một giải pháp quan trọng.</p>
                                         </div>
-                                    </div>
-                                    <div className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1500">
-                                        <div className="solusion_other_con_card_img">img</div>
+                                    </Link>
+                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1500">
+                                        <div className="solusion_other_con_card_img"><img src={baner_nhietdo}/></div>
                                         <div className="solusion_other_con_card_title">
-                                            <h5>Solusion</h5>
+                                            <h5>Cảnh báo nhiệt độ</h5>
                                         </div>
                                         <div className="solusion_other_con_card_content">
-                                            <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+                                            <p>Đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu.</p>
                                         </div>
-                                    </div>
-                                    <div className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="2000">
-                                        <div className="solusion_other_con_card_img">img</div>
+                                    </Link>
+                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="2000">
+                                        <div className="solusion_other_con_card_img"><img src={baner_camera}/></div>
                                         <div className="solusion_other_con_card_title">
-                                            <h5>Solusion</h5>
+                                            <h5>Camera an ninh</h5>
                                         </div>
                                         <div className="solusion_other_con_card_content">
-                                            <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+                                            <p>Camera an ninh là một giải pháp quan trọng để đảm bảo an toàn và giám sát trong nhiều lĩnh vực.</p>
                                         </div>
-                                    </div>
-                                    <div className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="2500">
-                                        <div className="solusion_other_con_card_img">img</div>
+                                    </Link>
+                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="2500">
+                                        <div className="solusion_other_con_card_img"><img src={baner_bodam}/></div>
                                         <div className="solusion_other_con_card_title">
-                                            <h5>Solusion</h5>
+                                            <h5>Bộ đàm</h5>
                                         </div>
                                         <div className="solusion_other_con_card_content">
-                                            <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+                                            <p>Rất hữu ích trong các tình huống khẩn cấp hoặc khi cần phản ứng nhanh.</p>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
-                                <Link to={"/giai-phap"} className="home_button_allsolusion">Xem tat ca <FiChevronsRight /></Link>
+                                <Link to={"/giai-phap"} className="home_button_allsolusion">Xem tất cả <FiChevronsRight /></Link>
                             </div>
                         </Container>
                     </div>
@@ -265,34 +265,20 @@ export default function Home() {
                         <Container>
                             <div className="container_blog_home">
                                 <div className="title_container_blog_home">
-                                    <h2>Latest Blog Posts</h2>
-                                    <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
+                                    <h2>Bài viết mới nhất</h2>
+                                    <p>Hướng dẫn sử dung hệ thống và phần mềm giám sát nhiệt độ Dalian.</p>
                                 </div>
                                 <div className="container_home_blog_card">
-                                    <div className="home_blog_card" data-aos="fade-up" data-aos-duration="1000">
-                                        <div className="home_blog_card_img">img</div>
-                                        <div className="home_blog_card_content">
-                                            <h5>Turing Expands the Leadership Team with David Lin, Controller</h5>
-                                            <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.</p>
-                                            <Link to={"/"}>Button</Link>
+                                    {blog && blog.slice(0, 3).map((item, index) => (
+                                        <div className="home_blog_card" data-aos="fade-up" data-aos-duration="1000" key={index}>
+                                            <div className="home_blog_card_img"><img src={item.img_blog} alt={item.name} /></div>
+                                            <div className="home_blog_card_content">
+                                                <h5>{item ? item.name_blog : ""}</h5>
+                                                <p>{item ? item.short_description_blog : ""}</p>
+                                                <Link to={"/"} >Xem thêm <FiChevronsRight /></Link>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="home_blog_card" data-aos="fade-up" data-aos-duration="1500">
-                                        <div className="home_blog_card_img">img</div>
-                                        <div className="home_blog_card_content">
-                                            <h5>Turing Expands the Leadership Team with David Lin, Controller</h5>
-                                            <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.</p>
-                                            <Link to={"/"}>Button</Link>
-                                        </div>
-                                    </div>
-                                    <div className="home_blog_card" data-aos="fade-up" data-aos-duration="2000">
-                                        <div className="home_blog_card_img">img</div>
-                                        <div className="home_blog_card_content">
-                                            <h5>Turing Expands the Leadership Team with David Lin, Controller</h5>
-                                            <p>Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.</p>
-                                            <Link to={"/"}>Button</Link>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </Container>
@@ -300,7 +286,7 @@ export default function Home() {
 
                 </div>
             </main>
-            
+
         </div>
     )
 }

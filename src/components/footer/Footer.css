@@ -1,6 +1,6 @@
 .footer {
     background: #F7FAFD;
-    padding: 20px;
+    
 
 }
 
@@ -12,6 +12,7 @@
     text-align: left;
     
     flex-wrap: wrap;
+    padding: 80px 0;
 }
 
 .footer_left {

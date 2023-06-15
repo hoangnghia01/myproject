@@ -42,8 +42,11 @@
 
 .product_name {
     font: 500;
+    color: #000;
 }
-
+.product_name:hover {
+    color: orange;
+}
 .product_code {
     font-size: 15px;
 }
