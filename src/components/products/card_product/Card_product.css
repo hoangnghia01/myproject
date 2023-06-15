@@ -43,6 +43,7 @@
 .product_name {
     font: 500;
     color: #000;
+    text-decoration: none;
 }
 .product_name:hover {
     color: orange;
@@ -71,4 +72,14 @@
     right: 0;
     background: orange;
     padding: 0 5px;
+}
+@media only screen and (max-width: 768px) {
+    .card_product {
+        width: 75%;
+    }
+   .product_list .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;}
 }

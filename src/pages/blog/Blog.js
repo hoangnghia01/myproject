@@ -18,9 +18,9 @@ export default function Blog() {
                     <Row className="row">
 
                         {blog && blog.map((item, index) => (
-                            <Col xs={2} sm={4}>
-                                <Link>
-                                <div key={index} className="card_container_blog_page">
+                            // <Col xs={2} sm={4}>
+                                <Link  key={index}>
+                                <div className="card_container_blog_page">
                                     <div className="img_cart_blog_page"><img src={item.img_blog} alt={item.name} /></div>
                                     <div className="content_cart_blog_page">
                                         <div className="blog_name_page"><h5>{item ? item.name_blog : ""}</h5></div>
@@ -28,7 +28,7 @@ export default function Blog() {
                                     </div>
                                 </div>
                                 </Link>
-                            </Col>
+                            // </Col>
                         ))}
 
                     </Row>

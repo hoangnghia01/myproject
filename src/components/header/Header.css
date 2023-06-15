@@ -21,7 +21,7 @@
 }
 .navbar {
     padding: 5px;
-    height: 11vh;
+    height: 10vh;
     background: none;
     
     z-index: 100;
@@ -34,7 +34,7 @@
   
   .navbar.setbackgroud {
     background: rgb(255, 255, 255);
-    height: 10vh;
+    height: 9vh;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 

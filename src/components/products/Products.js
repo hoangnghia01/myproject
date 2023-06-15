@@ -10,10 +10,10 @@ export default function Products() {
     const {products} = useContext(AppContext)
 
     return (
-        <div>
+        
            
 
-            <div>
+            
                
                 <nav className="product_list">
                     <Container >
@@ -22,14 +22,13 @@ export default function Products() {
                             {/* <h1 style={{color: "red"}}>{param.style}</h1> */}
                             {products && products.map((item, index) =>
                             (
-                                <Col xs={2} sm={3}>
+                                <Col xs={12} sm={6} lg={3} md={6}>
                                     <Card_product key={index} product={item} />
                                 </Col>
                             ))}
                         </Row>
                     </Container>
                 </nav >
-            </div>
-        </div>
+         
     )
 }

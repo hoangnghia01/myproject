@@ -32,15 +32,15 @@ margin-top: 20px;
 }
 
 .nursecall_solusion_page_bottom h2{
-padding-top: 30px;
+padding-top: 50px;
 }
 .nursecall_solusion_page_bottom_solusion{
     width: 100%;
     display: flex;
     padding: 60px 0;
     justify-content: space-around;
-    border-top: 1px solid orange;
-    border-bottom: 1px solid orange;
+    border-top: 2px solid orange;
+    /* border-bottom: 1px solid orange; */
 }
 .nursecall_solusion_page_bottom_solusion_info{
     width: 45%;

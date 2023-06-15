@@ -56,7 +56,7 @@ export default function Product_ditail() {
                             {/* <h1 style={{color: "red"}}>{param.style}</h1> */}
                             {products && products.map((item, index) =>
                             (
-                                <Col xs={2} sm={3}>
+                                <Col xs={12} sm={6} lg={3} md={6}>
                                     <Card_product key={index} product={item} />
                                 </Col>
                             ))}
