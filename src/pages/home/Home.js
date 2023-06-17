@@ -169,13 +169,10 @@ export default function Home() {
                                     <p>
                                         Thẻ rung tự phục vụ là một giải pháp công nghệ tiên tiến giúp cải thiện trải nghiệm khách hàng và quản lý dịch vụ trong các ngành công nghiệp như nhà hàng, quán cà phê, quầy phục vụ, quầy thu ngân, nhà sách, và nhiều nơi khác.  </p>
                                     <ul>
-                                        <li><Link to={"/"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Chuông gọi nhân viên y tế</span></Link></li>
-                                        <li><Link to={"/"}><BiChevronRight /><span>Chuông báo gọi trong nhà vệ sinh</span></Link></li>
+                                        <li><Link to={"/"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Xem chi tiết</span></Link></li>
+                                       
                                     </ul>
-                                    <ul>
-                                        <li><Link to={"/"}><BiChevronRight /><span>Chuông báo khẩn cấp</span></Link></li>
-                                        <li><Link to={"/"}><BiChevronRight /><span>Hệ thống báo động đỏ</span></Link></li>
-                                    </ul>
+                                    
                                 </div>
                                 <div className="solusion_home_img" data-aos="fade-up">
                                     <img src={hospital_solusion_img} />

@@ -4,12 +4,14 @@
     justify-content: space-around;
     margin: 30px 0;
 }
-.container_nursecall_solusion_page_tital{
+
+.container_nursecall_solusion_page_tital {
     width: 100%;
     margin: 30px 0;
     text-align: center;
     height: 100px;
 }
+
 .nursecall_solusion_pagetop_left {
     width: 45%;
     padding: 10px;
@@ -18,23 +20,25 @@
 .nursecall_solusion_pagetop_right {
     width: 45%;
 }
-.nursecall_solusion_pagetop_right img{
+
+.nursecall_solusion_pagetop_right img {
     width: 100%;
 }
 
-.nursecall_solusion_page_contact{
-width: 180px;
-height: 40px;
-border: none;
-background: linear-gradient(45deg, #eb6424, #fbba72);
-border-radius: 25px 0 25px 25px;
-margin-top: 20px;
+.nursecall_solusion_page_contact {
+    width: 180px;
+    height: 45px;
+    border: none;
+    background: linear-gradient(45deg, #eb6424, #fbba72);
+    border-radius: 25px 0 25px 25px;
+    margin-top: 20px;
 }
 
-.nursecall_solusion_page_bottom h2{
-padding-top: 50px;
+.nursecall_solusion_page_bottom h2 {
+    padding-top: 50px;
 }
-.nursecall_solusion_page_bottom_solusion{
+
+.nursecall_solusion_page_bottom_solusion {
     width: 100%;
     display: flex;
     padding: 60px 0;
@@ -42,9 +46,20 @@ padding-top: 50px;
     border-top: 2px solid orange;
     /* border-bottom: 1px solid orange; */
 }
-.nursecall_solusion_page_bottom_solusion_info{
+
+.nursecall_solusion_page_bottom_solusion_info {
     width: 45%;
 }
-.nursecall_solusion_page_bottom_solusion_img{
+
+.nursecall_solusion_page_bottom_solusion_img {
     width: 45%;
+}
+
+.solusion_page_bottom_button {
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(45deg, #eb6424, #fbba72);
+    border-radius: 25px 0 25px 25px;
+    border: none;
+    text-decoration: none;
 }

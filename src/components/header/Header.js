@@ -43,12 +43,20 @@ export default function Header() {
                                         <ul className='menu_child'>
                                             <li><Link to={"/giai-phap/giai-phap-cho-benh-vien"}>Giải pháp cho bệnh viện</Link>
                                                 <ul className='menu_child-child'>
-                                                    <li>ggggggggg1</li>
-                                                    <li>ggg1</li>
-                                                    <li>ggg1</li>
+                                                    <li>Chuông gọi nhân viên y tế</li>
+                                                    <li>Chuông báo gọi trong nhà vệ sinh</li>
+                                                    <li>Chuông báo khẩn cấp</li>
+                                                    <li>Hệ thống báo động đỏ</li>
                                                 </ul>
                                             </li>
-                                            <li>Giải pháp cho nhà hàng</li>
+                                            <li>
+                                                <Link to={"/giai-phap/giai-phap-cho-nha-hang"}>Giải pháp cho nhà hàng</Link>
+                                                <ul className='menu_child-child'>
+                                                    <li>Chuông gọi nhân viên phục vụ</li>
+                                                    <li>Hệ thống gọi số thứ tự</li>
+                                                    
+                                                </ul>
+                                            </li>
                                             <li>Giải pháp chuông gọi trong nhà máy</li>
                                             <li>Giải pháp tự phục vụ</li>
                                             <li>Giải pháp cảnh báo nhiệt độ - độ ẩm</li>

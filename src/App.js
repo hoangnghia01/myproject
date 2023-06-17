@@ -7,6 +7,7 @@ import Products from './components/products/Products';
 import Contact from './pages/contact/Contact';
 import Chuonggoiphucvu from './pages/products/chuonggoiphucvu/Chuonggoiphucvu';
 import Nursecall_solusion from './pages/solusions/nursecall_solusion/Nursecall_solusion';
+import Restaurant_solusion from './pages/solusions/restaurant_solusion/Restaurant_solusion';
 import Blog from './pages/blog/Blog';
 import { AppProvider } from './AppContext';
 import Aos from 'aos';
@@ -29,6 +30,7 @@ function App() {
             
           </Route>
           <Route path='/giai-phap/giai-phap-cho-benh-vien' element={<Nursecall_solusion />}></Route>
+          <Route path='/giai-phap/giai-phap-cho-nha-hang' element={<Restaurant_solusion />}></Route>
           <Route path='/san-pham' element={<Products />}>
 
           </Route>  
