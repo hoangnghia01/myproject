@@ -15,6 +15,7 @@ import { useEffect } from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Product_ditail from './pages/products/product_ditail/Product_ditail';
+import Cart_page from './pages/cart_page/Cart_page';
 function App() {
   useEffect(() => {
     Aos.init();
@@ -26,6 +27,7 @@ function App() {
         <Routes>
          
           <Route path='/' element={<Home />}></Route>
+          <Route path='/cart' element={<Cart_page />}></Route>
           <Route path='/giai-phap' element={<Solutions />}>
             
           </Route>
