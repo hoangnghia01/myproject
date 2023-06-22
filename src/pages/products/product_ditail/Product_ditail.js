@@ -26,10 +26,10 @@ export default function Product_ditail() {
             <Container className="container-product_ditail">
                 <h2>Sản phẩm</h2>
                 <div className="product_ditail_top">
-                    <div className="product_ditail_top_img">
+                    <div className="product_ditail_top_img" data-aos="zoom-in">
                         <img src={product ? product.img : ""} alt={product ? product.name : ""} />
                     </div>
-                    <div className="product_ditail_top_content">
+                    <div data-aos="fade-left" className="product_ditail_top_content">
                        
                             <div className="product_ditail_top_content_name"><h3>{product ? product.name : ""}</h3></div>
                             <div className="product_ditail_top_content_price"><span>Giá: </span>{product ? product.price : ""} <span>đ</span></div>
@@ -43,7 +43,7 @@ export default function Product_ditail() {
 
                     </div>
                 </div>
-                <div className="product_ditail_bottom">
+                <div className="product_ditail_bottom" data-aos="fade-up">
                     <h4>Chi tiết sản phẩm</h4>
                     <p>{product ? product.description : ""}</p>
                 </div>

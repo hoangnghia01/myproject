@@ -12,7 +12,8 @@ export default function Restaurant_solusion() {
                 <div className="container_restaurant_solusion_page">
                     <h1 className="container_restaurant_solusion_page_tital">Giải pháp toàn diện cho nhà hàng</h1>
                 </div>
-                <div className="restaurant_solusion_page_top">
+                <div className="restaurant_solusion_page_top" data-aos="fade-up"
+                    data-aos-duration="1000">
                     <div className="restaurant_solusion_pagetop_left">
                         <h3>Tăng cường sự tiện lợi và hiệu quả trong dịch vụ</h3>
                         <p>--- -</p>
@@ -27,7 +28,8 @@ export default function Restaurant_solusion() {
                 </div>
                 <div className="restaurant_solusion_page_bottom">
                     <h2>Các giải pháp</h2>
-                    <div className="restaurant_solusion_page_bottom_solusion">
+                    <div className="restaurant_solusion_page_bottom_solusion" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <div className="restaurant_solusion_page_bottom_solusion_info">
                             <h4>
                                 Chuông gọi nhân viên phục vụ
@@ -41,7 +43,8 @@ export default function Restaurant_solusion() {
                             <img src={baner_resraurent_call_1} />
                         </div>
                     </div>
-                    <div className="restaurant_solusion_page_bottom_solusion">
+                    <div className="restaurant_solusion_page_bottom_solusion" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <div className="restaurant_solusion_page_bottom_solusion_info">
                             <h4>
                                 Hệ thống gọi số thứ tự

@@ -10,11 +10,6 @@ export default function Products() {
     const {products} = useContext(AppContext)
 
     return (
-        
-           
-
-            
-               
                 <nav className="product_list">
                     <Container >
                     <h2 className="productsList">Sản phẩm</h2>
@@ -29,6 +24,5 @@ export default function Products() {
                         </Row>
                     </Container>
                 </nav >
-         
     )
 }
