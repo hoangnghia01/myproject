@@ -16,6 +16,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Product_ditail from './pages/products/product_ditail/Product_ditail';
 import Cart_page from './pages/cart_page/Cart_page';
+import Blog_ditail from './pages/blog/blog_ditail/Blog_ditail';
 function App() {
   useEffect(() => {
     Aos.init();
@@ -39,6 +40,8 @@ function App() {
           <Route path='/san-pham/:id' element={<Product_ditail />}></Route>
           <Route path='/san-pham/chuong-goi-phuc-vu' element={<Chuonggoiphucvu />}></Route>
           <Route path='/blog' element={<Blog />}></Route>
+          <Route path='/blog/:id' element={<Blog_ditail />}></Route>
+
           <Route path='/lien-he' element={<Contact />}></Route>
         </Routes>
         <Footer/>

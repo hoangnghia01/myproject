@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { AiOutlineUpCircle } from "react-icons/ai";
+import { AiOutlineUpCircle, AiOutlinePhone } from "react-icons/ai";
 
 import "./ScrollToTop.css";
 
@@ -29,6 +29,12 @@ const ScrollToTop = () => {
                     onClick={goToTop}
                 />
             )}{" "}
+            <section class="call-buton">
+                <a class="cc-calto-action-ripple" href="tel:0979772145">
+                    <i><AiOutlinePhone/></i>
+                    <span class="num">0979.772.145</span>
+                </a>
+            </section>
         </div>
     );
 };

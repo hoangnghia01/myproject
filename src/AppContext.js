@@ -105,7 +105,25 @@ export const AppProvider = ({ children }) => {
       img_blog: img4
     }
   ])
-
+  const [solusions, setSolusions] = useState([
+    
+    {
+      id: 1,
+      name_slusion: 'Chuông gọi nhà máy',
+      short_description_slusion: 'Để giải quyết và ứng phó với các sự cố nhanh chóng và hiệu quả là một giải pháp quan trọng.',
+      description_slusion: 'Trong môi trường công nghiệp hoặc các cơ sở sản xuất, sự cố là điều không thể tránh khỏi. Để giải quyết và ứng phó với các sự cố nhanh chóng và hiệu quả, báo gọi máy xảy ra sự cố là một giải pháp quan trọng. Hệ thống này giúp thông báo và gọi nhân viên kỹ thuật hoặc đội ngũ xử lý sự cố một cách nhanh nhất để đảm bảo sự vận hành liền mạch của các thiết bị và quy trình sản xuất',
+      img_slusion: img1,
+      solusion_for: "nha may"
+    },
+    {
+      id: 2,
+      name_slusion: 'Cảnh báo nhiệt độ',
+      short_description_slusion: 'Đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img1,
+      solusion_for: "nhiet do"
+    },
+  ])
 
 
   const [products, setProducts] = useState([

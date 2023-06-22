@@ -272,7 +272,7 @@ export default function Home() {
                                             <div className="home_blog_card_content">
                                                 <h5>{item ? item.name_blog : ""}</h5>
                                                 <p>{item ? item.short_description_blog : ""}</p>
-                                                <Link to={"/"} >Xem thêm <FiChevronsRight /></Link>
+                                                <Link to={`/blog/${item.id}`}  >Xem thêm <FiChevronsRight /></Link>
                                             </div>
                                         </div>
                                     ))}

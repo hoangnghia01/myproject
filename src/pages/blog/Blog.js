@@ -15,11 +15,12 @@ export default function Blog() {
                         <h2>Hướng dẫn</h2>
                         {/* <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p> */}
                     </div>
-                    <Row className="row">
+                    <Row className="row" data-aos="fade-up"
+     data-aos-duration="2000">
 
                         {blog && blog.map((item, index) => (
                             // <Col xs={2} sm={4}>
-                                <Link  key={index}>
+                                <Link to={`/blog/${item.id}`} key={index}>
                                 <div className="card_container_blog_page">
                                     <div className="img_cart_blog_page"><img src={item.img_blog} alt={item.name} /></div>
                                     <div className="content_cart_blog_page">

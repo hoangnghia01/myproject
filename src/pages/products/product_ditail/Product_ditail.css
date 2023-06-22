@@ -64,8 +64,11 @@
     border: none;
     background: orange;
     border-radius: 25px 0 25px 25px;
+    color: #fff;
 }
-
+.product_ditail_top_content_add_cart:hover{
+    transform: translateY(-5px);
+}
 .product_ditail_top_content_short_description h4 {
     margin: 20px 0;
 }

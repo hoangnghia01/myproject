@@ -1,9 +1,13 @@
+import { Container } from "react-bootstrap"
 import Header from "../../components/header/Header"
 export default function Solutions(){
     return(
        <div>
-        {/* <Header/> */}
-        Nghia hoang
+        
+        <Container>
+            nghiax
+            
+        </Container>
        </div>
     )
 }
