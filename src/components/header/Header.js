@@ -13,7 +13,7 @@ import { CiBookmark } from 'react-icons/ci';
 import Headers from './Headers';
 import { MdOutlineAccountCircle } from 'react-icons/md';
 import { VscSearch } from 'react-icons/vsc';
-
+import Cart_page from '../../pages/cart_page/Cart_page';
 import logo from "../logo/logo.png"
 import "./Header.css"
 import { useContext } from 'react';
