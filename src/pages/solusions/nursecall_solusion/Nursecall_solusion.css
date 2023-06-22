@@ -1,7 +1,7 @@
 .nursecall_solusion_page_top {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 30px 0;
 }
 
@@ -62,4 +62,34 @@
     border-radius: 25px 0 25px 25px;
     border: none;
     text-decoration: none;
+}@media only screen and (max-width: 1200px) {
+.nursecall_solusion_page_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+
+}
+.nursecall_solusion_pagetop_left{
+    width: 100%;
+}
+.nursecall_solusion_pagetop_right{
+    width: 100%;
+    margin: 15px 0;
+}
+.nursecall_solusion_page_bottom_solusion{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nursecall_solusion_page_bottom_solusion_info{
+    width: 100%;
+}
+.nursecall_solusion_page_bottom_solusion_img{
+    width: 100%;
+}
+.nursecall_solusion_page_bottom_solusion img{
+    margin: 15px 0;
+    width: 100%;
+}
 }

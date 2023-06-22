@@ -16,6 +16,19 @@
     padding-right: .75em;
 }
 
+.quality_cart_page{
+    display: flex;
+    justify-content: space-around;
+}
+.quality_cart_page samp{
+    width: 25px;
+    height: 25px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card-registration .select-arrow {
     top: 13px;
 }

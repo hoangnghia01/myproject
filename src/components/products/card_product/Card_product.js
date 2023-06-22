@@ -11,9 +11,9 @@ export default function Card_product(props) {
        
             <div className="card_product">
                 <div className="ing_product"> <img src={product.img} alt={product.name} /></div>
-                <div className="quick_view"><button>Xem nhanh</button>
+                {/* <div className="quick_view"><button>Xem nhanh</button>
 
-                </div>
+                </div> */}
                 <div className="content_cart_product">
                     <Link to={`/san-pham/${product.id}`} className="product_name"><b><h5>{product ? product.name : ""}</h5></b></Link>
                     <div className="product_price"><span>Giá: </span>{product ? product.price : ""} <span>đ</span></div>

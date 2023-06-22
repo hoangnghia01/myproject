@@ -223,16 +223,16 @@ export default function Header() {
 
 
                                                                                 </MDBCol>
-                                                                                <MDBCol md="2" lg="2" xl="2" className="text-end">
+                                                                                <MDBCol md="2" lg="2" xl="2" className="text-center">
                                                                                     <MDBTypography tag="h6" className="text-muted text-align-center;">
                                                                                         Tổng
                                                                                     </MDBTypography>
                                                                                     <MDBTypography tag="h6" className="mb-0">${product.qty * product.price}</MDBTypography>
                                                                                 </MDBCol>
-                                                                                <MDBCol md="2" lg="2" xl="2" className="text-end">
-                                                                                    <MDBTypography tag="h6" className="text-muted text-align-center;">
+                                                                                <MDBCol md="2" lg="2" xl="2" className="text-center">
+                                                                                    {/* <MDBTypography tag="h6" className="text-muted text-align-center;">
                                                                                         Xoá
-                                                                                    </MDBTypography>
+                                                                                    </MDBTypography> */}
                                                                                     <a href="#!" className="text-muted">
                                                                                         <VscClose fas icon="times" onClick={() => (delete1(product.id))} />
                                                                                     </a>

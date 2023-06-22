@@ -50,18 +50,18 @@ export default function Cart_page() {
 
 
                                                         </MDBCol>
-                                                        <MDBCol md="2" lg="2" xl="2">
+                                                        <MDBCol md="2" lg="2" xl="2"  className="text-center my-1">
                                                         {product ? product.price : ""}
                                                         </MDBCol>
-                                                        <MDBCol md="2" lg="3" xl="3">
-                                                            <MDBTypography tag="h6" className="text-muted">
+                                                        <MDBCol md="2" lg="3" xl="3" className="text-center my-1"    >
+                                                            {/* <MDBTypography tag="h6" className="text-muted">
                                                                 Shirt
-                                                            </MDBTypography>
+                                                            </MDBTypography> */}
                                                             <MDBTypography tag="h6" className="text-black mb-0">
                                                             {product ? product.name : ""}
                                                             </MDBTypography>
                                                         </MDBCol>
-                                                        <MDBCol md="2" lg="2" xl="2" className="d-flex align-items-center">
+                                                        <MDBCol md="2" lg="2" xl="2" className="quality_cart_page my-1">
 
 
                                                             <samp type="button" onClick={() => (changqty(product.id, -1))}>-</samp>
@@ -73,10 +73,10 @@ export default function Cart_page() {
 
 
                                                         </MDBCol>
-                                                        <MDBCol md="2" lg="2" xl="2" className="text-end">
+                                                        <MDBCol md="2" lg="2" xl="2"  className="text-center my-1">
                                                             <MDBTypography tag="h6" className="mb-0">${product.qty * product.price}</MDBTypography>
                                                         </MDBCol>
-                                                        <MDBCol md="2" lg="1" xl="1" className="text-end">
+                                                        <MDBCol md="2" lg="1" xl="1" className="text-center">
                                                             <a href="#!" className="text-muted">
                                                                 <VscClose fas icon="times" onClick={() => (delete1(product.id))}/>
                                                             </a>
