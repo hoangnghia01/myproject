@@ -426,6 +426,7 @@ transform: translateY(-5px);
     background: #fff;
     padding: 20px;
     display: inline-block;
+    /* height: 200vh; */
 }
 
 .shopping_cart h3 {

@@ -14,35 +14,34 @@ export default function Footer() {
                         <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
                     </div>
                     <div className="footer_center">
-                        <div className="helpful"><h4>Helpful</h4>
+                        <div className="helpful"><h4>Hỗ trợ khách hàng</h4>
                             <ul>
-                                <li><AiOutlineRight />  <Link to={"/"}>About Us</Link></li>
-                                <li><AiOutlineRight />  <Link to={"/"}>About Us</Link></li>
-                                <li><AiOutlineRight />  <Link to={"/"}>About Us</Link></li>
-                                <li><AiOutlineRight />  <Link to={"/"}>About Us</Link></li>
+                                <li><AiOutlineRight />  <Link to={"/"}>Hình thức thanh toán</Link></li>
+                                <li><AiOutlineRight />  <Link to={"/"}>Phương thức vận chuyển</Link></li>
+                                <li><AiOutlineRight />  <Link to={"/"}>Chính sách đổi trả</Link></li>
+                                <li><AiOutlineRight />  <Link to={"/"}>Chính sách bảo hành</Link></li>
                             </ul>
                         </div>
-                        <div className="support"><h4>Support</h4>
+                        {/* <div className="support"><h4>Support</h4>
                             <ul>
                                 <li><AiOutlineRight />  <Link to={"/"}>Contact</Link></li>
                                 <li><AiOutlineRight />  <Link to={"/"}>Contact</Link></li>
                                 <li><AiOutlineRight />  <Link to={"/"}>Contact</Link></li>
                                 <li><AiOutlineRight />  <Link to={"/"}>Contact</Link></li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
-                    <div className="contact_us"><h4>Contact Us</h4>
+                    <div className="contact_us"><h4>Thông tin liên hệ</h4>
                         <ul>
-                            <li><p>455 West Orchard Street
-                                Kings Mountain, NC 28086</p></li>
-                            <li><p>Phone: (272) 211-7370</p></li>
-                            <li><p>Email: (272) 211-7370</p></li>
+                            <li><p>Địa chỉ: 50/3/13 TL 29, phường Thạnh Lộc, quận 12, thành phố Hồ Chí Minh</p></li>
+                            <li><p>Điện thoại: 097 977 2145</p></li>
+                            <li><p>Email: info@ctsvn.vn</p></li>
                             <li></li>
                         </ul>
                     </div>
                 </div>
                 <div className="footer_bot" >
-                    <p>© 2023 Turing. All Rights Reserved.</p>
+                    <p>© 2023 CTSVN</p>
                 </div>
             </Container>
         </div>

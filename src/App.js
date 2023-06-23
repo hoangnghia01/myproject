@@ -17,6 +17,7 @@ import Footer from './components/footer/Footer';
 import Product_ditail from './pages/products/product_ditail/Product_ditail';
 import Cart_page from './pages/cart_page/Cart_page';
 import Blog_ditail from './pages/blog/blog_ditail/Blog_ditail';
+import Solusion_ditail from './pages/solusions/solusion_ditail/Solusion_ditail';
 function App() {
   useEffect(() => {
     Aos.init();
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path='/giai-phap/giai-phap-cho-benh-vien' element={<Nursecall_solusion />}></Route>
           <Route path='/giai-phap/giai-phap-cho-nha-hang' element={<Restaurant_solusion />}></Route>
+          <Route path='/giai-phap/:link' element={<Solusion_ditail />}></Route>
+
+
           <Route path='/san-pham' element={<Products />}>
 
           </Route>  

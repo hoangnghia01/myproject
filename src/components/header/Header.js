@@ -179,10 +179,10 @@ export default function Header() {
                                                             <div className="product_shoppingcart">
                                                                 <div className="d-flex justify-content-between align-items-center mb-5">
                                                                     <MDBTypography tag="h3" className="fw-bold mb-0 text-black">
-                                                                        Shopping Cart
+                                                                        Giỏ hàng
                                                                     </MDBTypography>
                                                                     <MDBTypography className="mb-0 text-muted">
-                                                                        {quanlity} san pham
+                                                                        {quanlity} sản phẩm
                                                                     </MDBTypography>
                                                                 </div>
 
@@ -194,7 +194,7 @@ export default function Header() {
                                                                                 <img src={product.img} alt={product.name} className="rounded-3" />
                                                                             </MDBCol> */}
 
-                                                                                <MDBCol md="2" lg="3" xl="3">
+                                                                                <MDBCol md="2" lg="4" xl="4">
                                                                                     <MDBTypography tag="h6" className="text-muted text-align-top">
                                                                                         Tên hàng hoá
                                                                                     </MDBTypography>
@@ -211,7 +211,7 @@ export default function Header() {
                                                                                     </MDBTypography>
 
                                                                                 </MDBCol>
-                                                                                <MDBCol md="2" lg="2" xl="2">
+                                                                                <MDBCol md="1" lg="2" xl="2">
                                                                                     <MDBTypography tag="h6" className="text-muted text-align-center;">
                                                                                         Số lượng
                                                                                     </MDBTypography>
@@ -229,7 +229,7 @@ export default function Header() {
                                                                                     </MDBTypography>
                                                                                     <MDBTypography tag="h6" className="mb-0">${product.qty * product.price}</MDBTypography>
                                                                                 </MDBCol>
-                                                                                <MDBCol md="2" lg="2" xl="2" className="text-center">
+                                                                                <MDBCol md="1" lg="1" xl="1" className="text-center">
                                                                                     {/* <MDBTypography tag="h6" className="text-muted text-align-center;">
                                                                                         Xoá
                                                                                     </MDBTypography> */}

@@ -90,10 +90,12 @@ function FormExample() {
                 <Button type="submit" className='submit_form'>Submit form</Button>
             </Form> */}
                 <div className='form_contact'>
+                    <Container>
                     <div className='form_label'>
-                        <h1>Liên hệ với chúng tôi</h1>
+                        <h2>Liên hệ với chúng tôi</h2>
                         <h5>Vui lòng liên hệ với chúng tôi nếu có bất kỳ câu hỏi hoặc thắc mắc nào.</h5>
                     </div>
+                    </Container>
                     <form ref={form} onSubmit={sendEmail} className='form_contact_input'>
                         <div className='form_group'>
                             <label>Name*</label>
@@ -106,7 +108,7 @@ function FormExample() {
                         </div>
                         <div className='form_group'>
                             <label>Message*</label>
-                            <textarea name="message" placeholder="Nhập tin nhan cho chung toi"/>
+                            <textarea name="message" placeholder="Nhập tin nhắn cho chúng tôi"/>
                         </div>
                         <input type="submit" value="Send" className='button_send' />
                     </form>

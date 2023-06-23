@@ -8,7 +8,7 @@
     margin-bottom: 30px;
     line-height: 30px;
 }
-.form_label h1{
+.form_label h2{
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -70,3 +70,13 @@ flex-direction: column;
     cursor: pointer;
     border-radius: 5px;
 }
+@media only screen and (max-width: 1200px) {
+    .form_contact {
+        width: 80%;
+    }
+    }
+    @media only screen and (max-width: 992px) {
+        .form_contact {
+            width: 100%;
+        }
+        }

@@ -6,7 +6,7 @@ import hospital1 from "../imgs/hospital1.jpg"
 import slider_hospital from "../imgs/slider_hospital.png"
 import baner_solusion_2 from "../imgs/baner_solusion_2.png"
 import hospital_solusion_img from "../imgs/hospital_solusion_img.png"
-import { Container, Carousel } from "react-bootstrap"
+import { Container, Carousel, Col, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { BiChevronRight } from 'react-icons/bi';
 import { TbFileLike, TbH5 } from 'react-icons/tb';
@@ -51,7 +51,7 @@ const images = [
     logo_tch
 ]
 export default function Home() {
-    const { blog } = useContext(AppContext)
+    const { blog, solusions } = useContext(AppContext)
 
     return (
         <div>
@@ -62,7 +62,7 @@ export default function Home() {
                 <div>
                     <div className="con_slider">
 
-                        <img src={slider_hospital} data-aos="fade-left" data-aos-duration="1000"></img>
+                        <img src={slider_hospital} data-aos="fade-left" data-aos-duration="500"></img>
                         <div className="content_slider">
                             <Container>
                                 <div className="con_content_slider" data-aos="fade-right" data-aos-duration="500">
@@ -80,7 +80,7 @@ export default function Home() {
                         <div className="con_why_choose">
 
                             <Container>
-                                <h1>Lý do bạn nên chọn chúng tôi</h1>
+                                <h2>Lý do bạn nên chọn chúng tôi</h2>
                                 <div className="reasons">
 
                                     <div className="reason" data-aos="fade-up" data-aos-duration="4000">
@@ -127,14 +127,14 @@ export default function Home() {
                                         <h4 style={{ color: "orange" }}>--- -</h4>
                                         <p>Chúng tôi cung cấp các giải pháp công nghệ đa dạng cho bệnh viện nhằm nâng cao hiệu quả và đảm bảo an ninh, an toàn cho bệnh nhân và nhân viên y tế. </p>
                                         <ul>
-                                            <li><Link to={"/"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Chuông gọi nhân viên y tế</span></Link></li>
+                                            <li><Link to={"/giai-phap/chuong-goi-nhan-vien-y-te"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Chuông gọi nhân viên y tế</span></Link></li>
                                             <li>
-                                                <Link to={"/"}><BiChevronRight /><span>Chuông báo gọi trong nhà vệ sinh</span></Link></li>
+                                                <Link to={"/giai-phap/chuong-bao-trong-nha-ve-sinh"}><BiChevronRight /><span>Chuông báo gọi trong nhà vệ sinh</span></Link></li>
                                         </ul>
                                         <ul>
-                                            <li><Link to={"/"}><BiChevronRight /><span>Chuông báo khẩn cấp</span></Link></li>
+                                            <li><Link to={"/giai-phap/chuong-bao-khan-cap"}><BiChevronRight /><span>Chuông báo khẩn cấp</span></Link></li>
                                             <li>
-                                                <Link to={"/"}><BiChevronRight /><span>Hệ thống báo động đỏ</span></Link></li>
+                                                <Link to={"/giai-phap/he-thong-bao-dong-do"}><BiChevronRight /><span>Hệ thống báo động đỏ</span></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -153,10 +153,10 @@ export default function Home() {
                                     <h4 style={{ color: "orange" }}>--- -</h4>
                                     <p>Với giải pháp chuông gọi toàn diện của chúng tôi, nhà hàng có thể tận dụng công nghệ để nâng cao hiệu suất hoạt động và mang đến trải nghiệm tốt hơn cho khách hàng. </p>
                                     <ul>
-                                        <li><Link to={"/"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Chuông gọi nhân viên phục vụ</span></Link></li>
+                                        <li><Link to={"/giai-phap/chuong-goi-nhan-vien-phuc-vu"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Chuông gọi nhân viên phục vụ</span></Link></li>
                                     </ul>
                                     <ul>
-                                        <li><Link to={"/"}><BiChevronRight /><span>Hệ thống gọi số thứ tự</span></Link></li>
+                                        <li><Link to={"/giai-phap/he-thong-goi-so-thu-tu"}><BiChevronRight /><span>Hệ thống gọi số thứ tự</span></Link></li>
                                     </ul>
                                 </div>
                             </Container>
@@ -169,10 +169,10 @@ export default function Home() {
                                     <p>
                                         Thẻ rung tự phục vụ là một giải pháp công nghệ tiên tiến giúp cải thiện trải nghiệm khách hàng và quản lý dịch vụ trong các ngành công nghiệp như nhà hàng, quán cà phê, quầy phục vụ, quầy thu ngân, nhà sách, và nhiều nơi khác.  </p>
                                     <ul>
-                                        <li><Link to={"/"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Xem chi tiết</span></Link></li>
-                                       
+                                        <li><Link to={"/giai-phap/the-rung-tu-phuc-vu"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Xem chi tiết</span></Link></li>
+
                                     </ul>
-                                    
+
                                 </div>
                                 <div className="solusion_home_img" data-aos="fade-up">
                                     <img src={hospital_solusion_img} />
@@ -189,44 +189,25 @@ export default function Home() {
                                     <h2>Các giải pháp khác</h2>
                                     <p>Chúng tôi cung cấp một loạt các giải pháp công nghệ để nâng cao hiệu suất và trải nghiệm khách hàng. Dưới đây là một số ví dụ về các giải pháp khác mà chúng tôi cung cấp:</p>
                                 </div>
-                                <div className="solusion_other_con">
-                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1000">
-                                        <div className="solusion_other_con_card_img"><img src={baner_nhamay}/></div>
-                                        <div className="solusion_other_con_card_title">
-                                            <h5>Chuông gọi nhà máy</h5>
-                                        </div>
-                                        <div className="solusion_other_con_card_content">
-                                            <p>Để giải quyết và ứng phó với các sự cố nhanh chóng và hiệu quả là một giải pháp quan trọng.</p>
-                                        </div>
-                                    </Link>
-                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1500">
-                                        <div className="solusion_other_con_card_img"><img src={baner_nhietdo}/></div>
-                                        <div className="solusion_other_con_card_title">
-                                            <h5>Cảnh báo nhiệt độ</h5>
-                                        </div>
-                                        <div className="solusion_other_con_card_content">
-                                            <p>Đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu.</p>
-                                        </div>
-                                    </Link>
-                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="2000">
-                                        <div className="solusion_other_con_card_img"><img src={baner_camera}/></div>
-                                        <div className="solusion_other_con_card_title">
-                                            <h5>Camera an ninh</h5>
-                                        </div>
-                                        <div className="solusion_other_con_card_content">
-                                            <p>Camera an ninh là một giải pháp quan trọng để đảm bảo an toàn và giám sát trong nhiều lĩnh vực.</p>
-                                        </div>
-                                    </Link>
-                                    <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="2500">
-                                        <div className="solusion_other_con_card_img"><img src={baner_bodam}/></div>
-                                        <div className="solusion_other_con_card_title">
-                                            <h5>Bộ đàm</h5>
-                                        </div>
-                                        <div className="solusion_other_con_card_content">
-                                            <p>Rất hữu ích trong các tình huống khẩn cấp hoặc khi cần phản ứng nhanh.</p>
-                                        </div>
-                                    </Link>
-                                </div>
+
+                                <Row>
+                                    {solusions && solusions.slice(0, 4).map((item, index) => (
+                                        <Col xs={12} sm={6} lg={3} md={6}>
+                                            <div className="solusion_other_con" key={index} >
+                                                <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1000">
+                                                    <div className="solusion_other_con_card_img"><img src={item.img_slusion} alt={item.name_slusion} /></div>
+                                                    <div className="solusion_other_con_card_title">
+                                                        <h5>{item ? item.name_slusion : ""}</h5>
+                                                    </div>
+                                                    <div className="solusion_other_con_card_content">
+                                                        <p>{item ? item.short_description_slusion : ""}</p>
+                                                    </div>
+                                                </Link>
+                                            </div>
+                                        </Col>
+
+                                    ))}
+                                </Row>
                                 <Link to={"/giai-phap"} className="home_button_allsolusion">Xem tất cả <FiChevronsRight /></Link>
                             </div>
                         </Container>

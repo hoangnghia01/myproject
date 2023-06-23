@@ -4,6 +4,16 @@ import img1 from "../../myproject/src/components/imgs/blog_img/img1.png"
 import img2 from "../../myproject/src/components/imgs/blog_img/img2.png"
 import img3 from "../../myproject/src/components/imgs/blog_img/img3.png"
 import img4 from "../../myproject/src/components/imgs/blog_img/img4.png"
+import img5 from "../../myproject/src/components/imgs/blog_img/img5.png"
+import img6 from "../../myproject/src/components/imgs/blog_img/img6.png"
+import img7 from "../../myproject/src/components/imgs/blog_img/img7.png"
+import img8 from "../../myproject/src/components/imgs/blog_img/goi_y_ta.png"
+import img9 from "../../myproject/src/components/imgs/blog_img/goi_trong_vs.png"
+import img10 from "../../myproject/src/components/imgs/blog_img/bao_khan_cap.jpg"
+import img11 from "../../myproject/src/components/imgs/blog_img/bao_dong_do.jpg"
+import img12 from "../../myproject/src/components/imgs/blog_img/chuong-goi-phuc-vu.png"
+import img13 from "../../myproject/src/components/imgs/blog_img/call_stt.jpg"
+import img14 from "../../myproject/src/components/imgs/blog_img/the_rung.jpg"
 
 import st_100 from "../../myproject/src/components/imgs/st-100-w.jpg"
 import st_200 from "../../myproject/src/components/imgs/st-200.jpg"
@@ -87,7 +97,7 @@ export const AppProvider = ({ children }) => {
       id: 2,
       name_blog: 'HƯỚNG DẪN DOWNLOAD BÁO CÁO GIÁM SÁT NHIỆT ĐỘ DALIAN',
       short_description_blog: 'Hướng dẫn download báo cáo phần mềm giám sát nhiệt độ Dalian trên trình duyệt Web',
-      description_blog: 'Truy cập địa chỉ: http://iot.ecall.com.vnvà đăng nhập bằng tài khoản đã lập Chọn “Data Warehouse” sau đó chọn thiết bị cần Download báo cáo Một cửa sổ mới mở ra, chọn “Private View” Sau đó chọn Sensor cần download báo cáo ở mục “Select sensor” Bấm chọn vào Sensor cần download báo cáo  Tiếp sau đó là chọn khoảng thời gian cần lập báo cáo. Sau đó bấm chọn cách thức xuất dữ liệu báo cáo Dowload Image: Tải dữ liệu dạng hình ảnh Preview raw data: Tải dữ liệu dạng file excel, có thể chỉnh sửa Create PDF Report: Tải dữ liệu dạng file PDF, không thể chỉnh sửa',
+      description_blog: 'Truy cập địa chỉ: http://iot.ecall.com.vn và đăng nhập bằng tài khoản đã lập Chọn “Data Warehouse” sau đó chọn thiết bị cần Download báo cáo Một cửa sổ mới mở ra, chọn “Private View” Sau đó chọn Sensor cần download báo cáo ở mục “Select sensor” Bấm chọn vào Sensor cần download báo cáo  Tiếp sau đó là chọn khoảng thời gian cần lập báo cáo. Sau đó bấm chọn cách thức xuất dữ liệu báo cáo Dowload Image: Tải dữ liệu dạng hình ảnh Preview raw data: Tải dữ liệu dạng file excel, có thể chỉnh sửa Create PDF Report: Tải dữ liệu dạng file PDF, không thể chỉnh sửa',
       img_blog: img2
     },
     {
@@ -110,19 +120,107 @@ export const AppProvider = ({ children }) => {
     {
       id: 1,
       name_slusion: 'Chuông gọi nhà máy',
+      link: 'chuong-goi-nha-may',
       short_description_slusion: 'Để giải quyết và ứng phó với các sự cố nhanh chóng và hiệu quả là một giải pháp quan trọng.',
       description_slusion: 'Trong môi trường công nghiệp hoặc các cơ sở sản xuất, sự cố là điều không thể tránh khỏi. Để giải quyết và ứng phó với các sự cố nhanh chóng và hiệu quả, báo gọi máy xảy ra sự cố là một giải pháp quan trọng. Hệ thống này giúp thông báo và gọi nhân viên kỹ thuật hoặc đội ngũ xử lý sự cố một cách nhanh nhất để đảm bảo sự vận hành liền mạch của các thiết bị và quy trình sản xuất',
-      img_slusion: img1,
+      img_slusion: img5,
       solusion_for: "nha may"
     },
     {
       id: 2,
       name_slusion: 'Cảnh báo nhiệt độ',
+      link:'canh-bao-nhiet-do',
       short_description_slusion: 'Đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu.',
       description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
-      img_slusion: img1,
+      img_slusion: img4,
       solusion_for: "nhiet do"
     },
+    {
+      id: 3,
+      name_slusion: 'Camera an ninh',
+      link:'camera-an-ninh',
+      short_description_slusion: 'Camera an ninh là một giải pháp quan trọng để đảm bảo an toàn và giám sát trong nhiều lĩnh vực.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img6,
+      solusion_for: "camera"
+    },  
+    {
+      id: 4,
+      name_slusion: 'Bộ đàm',
+      link:'bo-dam',
+      short_description_slusion: 'Rất hữu ích trong các tình huống khẩn cấp hoặc khi cần phản ứng nhanh.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img7,
+      solusion_for: "bo dam"
+    },
+    {
+      id: 5,
+      name_slusion: 'Chuông gọi nhân viên y tế',
+      link:'chuong-goi-nhan-vien-y-te',
+      short_description_slusion: 'Bệnh nhân và nhân viên y tế có thể gọi ngay lập tức nhân viên y tế khi cần đến sự hỗ trợ.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img8,
+      solusion_for: "benh vien"
+    },
+   
+    {
+      id: 6,
+      name_slusion: 'Chuông báo trong nhà vệ sinh',
+      link:'chuong-bao-trong-nha-ve-sinh',
+      short_description_slusion: 'Chuông gọi y tá trong nhà vệ sinh đã trở thành một giải pháp đáng chú ý trong các cơ sở y tế.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img9,
+      solusion_for: "benh vien"
+    },
+    {
+      id: 7,
+      name_slusion: 'Chuông báo khẩn cấp',
+      link:'chuong-bao-khan-cap',
+      short_description_slusion: 'Trong những tình huống khẩn cấp, phản ứng nhanh chóng là sự phân biệt giữa sự sống và cái chết.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img10,
+      solusion_for: "benh vien"
+    },
+    {
+      id: 8,
+      name_slusion: 'Hệ thống báo động đỏ',
+      link:'he-thong-bao-dong-do',
+      short_description_slusion: 'Giải pháp để đối phó với tình huống tấn công và đảm bảo sự an toàn cho bác sĩ.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img11,
+      solusion_for: "benh vien"
+    },
+    {
+      id: 9,
+      name_slusion: 'Chuông gọi nhân viên phục vụ',
+      link:'chuong-goi-nhan-vien-phuc-vu',
+      short_description_slusion: 'Giúp khách hàng dễ dàng liên lạc và yêu cầu hỗ trợ từ nhân viên một cách nhanh chóng và thuận tiện.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img12,
+      solusion_for: "nha hang"
+    },
+    {
+      id: 10,
+      name_slusion: 'Hệ thống gọi số thứ tự',
+      link:'he-thong-goi-so-thu-tu',
+      short_description_slusion: 'Hệ thống gọi số thứ tự được sử dụng để tối ưu hóa quá trình chờ đợi và phục vụ khách hàng.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img13,
+      solusion_for: "nha hang"
+    },
+    {
+      id: 11,
+      name_slusion: 'Thẻ rung tự phục vụ',
+      link:'the-rung-tu-phuc-vu',
+      short_description_slusion: 'Khách hàng không cần phải đứng chờ đợi mà có thể tự do di chuyển trong khu vực chờ đợi.',
+      description_slusion: 'Hệ thống cảnh báo nhiệt độ và độ ẩm trong phòng server và tủ bảo quản thuốc đóng vai trò quan trọng trong việc bảo vệ thiết bị và hàng hóa quan trọng. Nó giúp đảm bảo rằng các điều kiện môi trường được duy trì trong phạm vi an toàn và tối ưu, từ đó nâng cao hiệu suất và đảm bảo chất lượng của các hệ thống và sản phẩm quan trọng.',
+      img_slusion: img14,
+      solusion_for: "quan cf"
+    },
+
+
+
+
   ])
 
 
@@ -264,6 +362,7 @@ export const AppProvider = ({ children }) => {
     <AppContext.Provider value={{
       handle_click, handle_click_close, show, setShow, handle_click_cart, handle_click_cart_close, showcart, setShowcart, handle_click_menu, close_menu, shownav, setShownav
       , backrgoudNav, setBackrgoudNav, products, goToTop, showTopBtn, setShowTopBtn, blog, setBlog, addCart, cart, setCart, quanlity, changqty, delete1
+      ,solusions
     }}>
       {children}
     </AppContext.Provider>
