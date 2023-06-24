@@ -70,8 +70,8 @@ export default function Header() {
 
                                 <ul onClick={close_menu}>
                                     <li><Link to={"/"} style={{ textDecoration: 'none' }}><h3>Trang chủ</h3></Link></li>
-                                    <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giải pháp <span><GrFormDown /></span></h3>
-                                        <ul className='menu_child'>
+                                    <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giải pháp <span><GrFormDown /></span>
+                                    <ul className='menu_child'>
                                             <li><Link to={"/giai-phap/giai-phap-cho-benh-vien"}>Giải pháp cho bệnh viện</Link>
                                                 <ul className='menu_child-child'>
                                                     <li>Chuông gọi nhân viên y tế</li>
@@ -94,6 +94,8 @@ export default function Header() {
                                             <li>Giải pháp Camera an ninh</li>
                                             <li>Bộ đàm</li>
                                         </ul>
+                                    </h3>
+                                        
                                     </Link></li>
                                     <li><Link to={"/san-pham"} style={{ textDecoration: 'none' }} className='product'>
                                         <h3>Sản phẩm <span><GrFormDown /></span></h3>
@@ -156,10 +158,10 @@ export default function Header() {
                                                 <div className='suggest'>
                                                     <p>Gợi ý</p>
                                                     <ul>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Mua sam truc tuyen</li></Link>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Mua sam truc tuyen</li></Link>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Mua sam truc tuyen</li></Link>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Mua sam truc tuyen</li></Link>
+                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Chuong goi nha hang</li></Link>
+                                                        <Link to={"/"}> <li><BiRightArrowAlt />    The tu phuc vu</li></Link>
+                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Nut chuong goi</li></Link>
+                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Man hinh hien thi</li></Link>
                                                         <Link to={"/"}> <li><BiRightArrowAlt />    Mua sam truc tuyen</li></Link>
                                                     </ul>
                                                 </div>
@@ -260,9 +262,10 @@ export default function Header() {
                                                                         <MDBCardText onClick={handle_click_cart_close} className="cart_button_close_cart">
                                                                             <BiArrowBack /> Tiếp tục mua sắm
                                                                         </MDBCardText>
-                                                                        <MDBCardText tag="a" href="/cart" className="cart_button_thanhtoan">
+                                                                        {/* <MDBCardText tag="a" href="/cart" className="cart_button_thanhtoan">
                                                                             Thanh toán
-                                                                        </MDBCardText>
+                                                                        </MDBCardText> */}
+                                                                        <Link to={"/cart"} onClick={handle_click_cart_close} className="cart_button_thanhtoan"> Thanh toán</Link>
 
                                                                     </MDBTypography>
                                                                    

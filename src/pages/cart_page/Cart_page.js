@@ -23,7 +23,7 @@ export default function Cart_page() {
     const { cart, quanlity, changqty, delete1 } = useContext(AppContext)
     console.log(cart)
     return (
-        <section style={{ backgroundColor: "#eee" }}>
+        <section style={{ backgroundColor: "#eee" }} data-aos="zoom-in">
             <MDBContainer className="py-5">
                 <MDBRow className="justify-content-center align-items-center">
                     <MDBCol size="12">
