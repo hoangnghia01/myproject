@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myproject/static/css/main.d4f240ab.css",
-    "main.js": "/myproject/static/js/main.1ac11e16.js",
+    "main.js": "/myproject/static/js/main.46f310eb.js",
     "static/media/nha-hang-1.png": "/myproject/static/media/nha-hang-1.b724b78becfe9037d19e.png",
     "static/media/slider_hospital.png": "/myproject/static/media/slider_hospital.f925fdf2553ab93f34da.png",
     "static/media/hospital1.jpg": "/myproject/static/media/hospital1.20ad0f13e995d3b85314.jpg",
@@ -46,10 +46,10 @@
     "static/media/logo_bv.jpg": "/myproject/static/media/logo_bv.302e4950c3f60bce3926.jpg",
     "index.html": "/myproject/index.html",
     "main.d4f240ab.css.map": "/myproject/static/css/main.d4f240ab.css.map",
-    "main.1ac11e16.js.map": "/myproject/static/js/main.1ac11e16.js.map"
+    "main.46f310eb.js.map": "/myproject/static/js/main.46f310eb.js.map"
   },
   "entrypoints": [
     "static/css/main.d4f240ab.css",
-    "static/js/main.1ac11e16.js"
+    "static/js/main.46f310eb.js"
   ]
 }
