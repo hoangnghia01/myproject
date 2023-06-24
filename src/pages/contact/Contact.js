@@ -38,7 +38,7 @@ function FormExample() {
     return (
         <div>
            
-            <Container className='container_form'>
+            <Container className='container_form' data-aos="zoom-in">
                 {/* <Form noValidate validated={validated} onSubmit={handleSubmit} className='form_contact' ref={form}>
                <div className='form_label'>
                <h1>Liên hệ với chúng tôi</h1>

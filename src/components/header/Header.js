@@ -12,7 +12,7 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 import { CiBookmark } from 'react-icons/ci';
 import Headers from './Headers';
 import { MdOutlineAccountCircle } from 'react-icons/md';
-import { VscSearch } from 'react-icons/vsc';
+import { HiMenuAlt2 } from 'react-icons/hi';
 // <<<<<<< HEAD
 import Cart_page from '../../pages/cart_page/Cart_page';
 // =======
@@ -47,7 +47,20 @@ export default function Header() {
             <div className='header'>
                 <Navbar expand="lg" className={`navbar ${backrgoudNav ? "setbackgroud" : ""}`} >
                     <Container className='container'>
-                        <CgMenuLeft className='nav_icon' onClick={handle_click_menu} />
+
+
+                        <div  className='nav_icon'>
+                        <HiMenuAlt2 onClick={handle_click_menu} />
+                        </div>
+                        
+                        {/* <div className='nav_icon'>
+                                
+                                <p className='nav_icon1'>|</p>
+                                <p className='nav_icon2'>|</p>
+                                <p className='nav_icon3'>|</p>
+                            </div> */}
+
+
                         <div className='header_left'>
                             <Link to={"/"} style={{ textDecoration: 'none' }} ><img src={logo} /></Link>
                         </div>

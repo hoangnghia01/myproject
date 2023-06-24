@@ -21,7 +21,7 @@ export default function Blog_ditail() {
         <div className="blog_ditail">
             <Container>
                 <div className="blog_ditail_container" data-aos="fade-up"
-                    data-aos-duration="2000">
+                    data-aos-duration="1000">
 
                     <div className="blog_ditail_container_content">
                         <h3>{blog_dt ? blog_dt.name_blog : ""}</h3>

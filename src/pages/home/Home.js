@@ -192,8 +192,8 @@ export default function Home() {
 
                                 <Row>
                                     {solusions && solusions.slice(0, 4).map((item, index) => (
-                                        <Col xs={12} sm={6} lg={3} md={6}>
-                                            <div className="solusion_other_con" key={index} >
+                                        <Col xs={12} sm={6} lg={3} md={6}  key={index} >
+                                            <div className="solusion_other_con">
                                                 <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1000">
                                                     <div className="solusion_other_con_card_img"><img src={item.img_slusion} alt={item.name_slusion} /></div>
                                                     <div className="solusion_other_con_card_title">

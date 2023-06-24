@@ -16,7 +16,7 @@ export default function Blog() {
                         {/* <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p> */}
                     </div>
                     <Row className="row" data-aos="fade-up"
-     data-aos-duration="2000">
+     data-aos-duration="1000">
 
                         {blog && blog.map((item, index) => (
                             // <Col xs={2} sm={4}>

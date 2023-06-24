@@ -544,9 +544,30 @@ transform: translateY(-5px);
     .nav_icon {
         display: flex;
         width: 20%;
-        align-items: start;
+      
         justify-content: left;
+        align-items: start;
         cursor: pointer;
+        margin: 0;
+        padding: 0;
+        /* transform: rotate(90deg); */
+      
+    }
+    .nav_icon1{
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .nav_icon2{
+        margin:0 4px ;
+        padding: 0;
+        
+    }
+    .nav_icon3{
+        margin: 0;
+        padding: 0;
+        
     }
 
 }
