@@ -2,7 +2,7 @@
   "name": "myproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hoangnghia01/myproject.git",
+  "homepage": "https://hoangnghia01.github.io/myproject/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@popperjs/core": "^2.11.8",
