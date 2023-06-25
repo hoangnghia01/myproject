@@ -20,6 +20,12 @@ import st_200 from "../../myproject/src/components/imgs/st-200.jpg"
 import st_300 from "../../myproject/src/components/imgs/st-300.jpg"
 import st_300_2b from "../../myproject/src/components/imgs/st3002b.png"
 import st_600 from "../../myproject/src/components/imgs/st600.png"
+import sr_a2003 from "../../myproject/src/components/imgs/sr-2003.jpg"
+import sr_a303 from "../../myproject/src/components/imgs/sra330.jpg"
+import SGP_100R_10C from "../../myproject/src/components/imgs/spg-100.png"
+
+
+
 import logo from "../../myproject/src/components/logo/logo.png"
 
 
@@ -236,7 +242,6 @@ export const AppProvider = ({ children }) => {
       img_product: logo,
       brand: 'Syscall',
       origin: 'Korea',
-
       quantity: 10,
       short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
       description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
@@ -258,8 +263,6 @@ export const AppProvider = ({ children }) => {
       quantity: 10,
       short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
       description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-
-
     },
     {
       id: 3,
@@ -302,17 +305,60 @@ export const AppProvider = ({ children }) => {
       product_code: 'ST600',
       img: st_600,
       label: 'new',
+      type: 'Nut chuong',
+      img_product: logo,
+      brand: 'Syscall',
+      origin: 'Korea',
+      quantity: 10,
+      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
+      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+    },
+    {
+      id: 6,
+      name: 'Màn hình hiển thị SR-A2003',
+      price: 10,
+      product_code: 'SRA2003',
+      img: sr_a2003,
+      label: 'new',
       type: 'Man hinh',
       img_product: logo,
       brand: 'Syscall',
       origin: 'Korea',
-
       quantity: 10,
       short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
       description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-
-
     },
+    {
+      id: 6,
+      name: 'Màn hình hiển thị SR-A303',
+      price: 10,
+      product_code: 'SRA303',
+      img: sr_a303,
+      label: 'new',
+      type: 'Man hinh',
+      img_product: logo,
+      brand: 'Syscall',
+      origin: 'Korea',
+      quantity: 10,
+      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
+      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+    },
+    {
+      id: 6,
+      name: 'Bộ thẻ rung SGP-100R-10C',
+      price: 10,
+      product_code: 'SGP-100R-10C',
+      img: SGP_100R_10C,
+      label: 'new',
+      type: 'Man hinh',
+      img_product: logo,
+      brand: 'Syscall',
+      origin: 'Korea',
+      quantity: 10,
+      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
+      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+    },
+    
   ])
 
   useEffect(() => {

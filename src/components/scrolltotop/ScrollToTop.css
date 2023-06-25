@@ -52,8 +52,8 @@
 .call-buton .cc-calto-action-ripple {
     z-index: 99999;
     position: fixed;
-    left: 3rem;
-    bottom: 3rem;
+    left: 2rem;
+    bottom: 2rem;
     background: #ec8b00;
     width: 3rem;
     height: 3rem;
@@ -74,6 +74,18 @@
     -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
+}
+@media only screen and (max-width: 481px) {
+    .call-buton .cc-calto-action-ripple {
+       
+        width: 2rem;
+        height: 2rem;
+    }
+    .icon-position-ontop {
+       
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 .call-buton .cc-calto-action-ripple i {
