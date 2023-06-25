@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myproject/static/css/main.d4f240ab.css",
-    "main.js": "/myproject/static/js/main.46f310eb.js",
+    "main.css": "/myproject/static/css/main.bdeb05a7.css",
+    "main.js": "/myproject/static/js/main.f8c45698.js",
     "static/media/nha-hang-1.png": "/myproject/static/media/nha-hang-1.b724b78becfe9037d19e.png",
     "static/media/slider_hospital.png": "/myproject/static/media/slider_hospital.f925fdf2553ab93f34da.png",
     "static/media/hospital1.jpg": "/myproject/static/media/hospital1.20ad0f13e995d3b85314.jpg",
@@ -17,6 +17,7 @@
     "static/media/img2.png": "/myproject/static/media/img2.25f4d2df456ce0cb0ab7.png",
     "static/media/logo_king_cf.png": "/myproject/static/media/logo_king_cf.c450c25bfa65cde663df.png",
     "static/media/so-thu-tu.png": "/myproject/static/media/so-thu-tu.076f8ffc36b9bcb1105a.png",
+    "static/media/spg-100.png": "/myproject/static/media/spg-100.d03eca55854560ac4bbe.png",
     "static/media/chuong-goi-phuc-vu.png": "/myproject/static/media/chuong-goi-phuc-vu.76b76e1381d628d1dfee.png",
     "static/media/chuong-nha-ve-sinh.png": "/myproject/static/media/chuong-nha-ve-sinh.0c2f03225c6847c77cb1.png",
     "static/media/logo.png": "/myproject/static/media/logo.59ef6d6583df80c41658.png",
@@ -33,6 +34,8 @@
     "static/media/logo_sukiya.jpg": "/myproject/static/media/logo_sukiya.f976537a7132904a7a14.jpg",
     "static/media/st600.png": "/myproject/static/media/st600.1f984ea9999818c0d0da.png",
     "static/media/goi_y_ta.png": "/myproject/static/media/goi_y_ta.ab5ad80c230dd0249173.png",
+    "static/media/sra330.jpg": "/myproject/static/media/sra330.2cfd18b1a930b3cd9155.jpg",
+    "static/media/sr-2003.jpg": "/myproject/static/media/sr-2003.aeb633e3afc2c1024cb7.jpg",
     "static/media/call_stt.jpg": "/myproject/static/media/call_stt.7647a9447793436c3198.jpg",
     "static/media/st-100-w.jpg": "/myproject/static/media/st-100-w.e7c5f74e5c5f7c7f82e4.jpg",
     "static/media/the_rung.jpg": "/myproject/static/media/the_rung.22eeb862ae2f01ac1aaa.jpg",
@@ -45,11 +48,11 @@
     "static/media/bao_khan_cap.jpg": "/myproject/static/media/bao_khan_cap.84997894eb59a0a1b162.jpg",
     "static/media/logo_bv.jpg": "/myproject/static/media/logo_bv.302e4950c3f60bce3926.jpg",
     "index.html": "/myproject/index.html",
-    "main.d4f240ab.css.map": "/myproject/static/css/main.d4f240ab.css.map",
-    "main.46f310eb.js.map": "/myproject/static/js/main.46f310eb.js.map"
+    "main.bdeb05a7.css.map": "/myproject/static/css/main.bdeb05a7.css.map",
+    "main.f8c45698.js.map": "/myproject/static/js/main.f8c45698.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4f240ab.css",
-    "static/js/main.46f310eb.js"
+    "static/css/main.bdeb05a7.css",
+    "static/js/main.f8c45698.js"
   ]
 }
