@@ -23,9 +23,10 @@ import st_600 from "../../myproject/src/components/imgs/st600.png"
 import sr_a2003 from "../../myproject/src/components/imgs/sr-2003.jpg"
 import sr_a303 from "../../myproject/src/components/imgs/sra330.jpg"
 import SGP_100R_10C from "../../myproject/src/components/imgs/spg-100.png"
-
-
-
+import GP_200R_10C from "../../myproject/src/components/imgs/gp-200r-10.jpg"
+import GP_101R_10C from "../../myproject/src/components/imgs/gp-101r-10.jpg"
+import SB_700 from "../../myproject/src/components/imgs/sb-700.jpg"
+import SRL_300 from "../../myproject/src/components/imgs/srl200.jpg"
 import logo from "../../myproject/src/components/logo/logo.png"
 
 
@@ -223,6 +224,7 @@ export const AppProvider = ({ children }) => {
       img_slusion: img14,
       solusion_for: "quan cf"
     },
+    
 
 
 
@@ -329,7 +331,7 @@ export const AppProvider = ({ children }) => {
       description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
     },
     {
-      id: 6,
+      id: 7,
       name: 'Màn hình hiển thị SR-A303',
       price: 10,
       product_code: 'SRA303',
@@ -344,13 +346,13 @@ export const AppProvider = ({ children }) => {
       description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
     },
     {
-      id: 6,
+      id: 8,
       name: 'Bộ thẻ rung SGP-100R-10C',
       price: 10,
       product_code: 'SGP-100R-10C',
       img: SGP_100R_10C,
       label: 'new',
-      type: 'Man hinh',
+      type: 'The rung',
       img_product: logo,
       brand: 'Syscall',
       origin: 'Korea',
@@ -358,6 +360,64 @@ export const AppProvider = ({ children }) => {
       short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
       description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
     },
+    {id: 9,
+    name: 'Bộ thẻ rung GP-200R-10C',
+    price: 50,
+    product_code: 'GP-200R-10C',
+    img: GP_200R_10C,
+    label: '',
+    type: 'The rung',
+    img_product: logo,
+    brand: 'Syscall',
+    origin: 'Korea',
+    quantity: 10,
+    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
+    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+  },
+  {id: 10,
+    name: 'Bộ thẻ rung GP-101R-10C',
+    price: 50,
+    product_code: 'GP-101R-10C',
+    img: GP_101R_10C,
+    label: 'hot',
+    type: 'The rung',
+    img_product: logo,
+    brand: 'Syscall',
+    origin: 'Korea',
+    quantity: 10,
+    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
+    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+  },
+  {id: 11,
+    name: 'Đèn báo SRL 300',
+    price: 50,
+    product_code: 'SRL-300',
+    img: SRL_300,
+    label: 'new',
+    type: 'Den bao',
+    img_product: logo,
+    brand: 'Syscall',
+    origin: 'Korea',
+    quantity: 10,
+    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
+    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+  },
+  {id: 11,
+    name: 'Đồng hồ SB 700',
+    price: 20,
+    product_code: 'SB-700',
+    img: SB_700,
+    label: 'new',
+    type: 'Dong ho',
+    img_product: logo,
+    brand: 'Syscall',
+    origin: 'Korea',
+    quantity: 10,
+    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
+    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+  },
+  
+
     
   ])
 
@@ -404,6 +464,20 @@ export const AppProvider = ({ children }) => {
 
   const quanlity = (cart.length)
   
+
+  // const [searchText, setSearchText] = useState('');
+
+  // const handleSearchChange = (event) => {
+  //   setSearchText(event.target.value);
+  // };
+
+  // const handleSearchSubmit = (event) => {
+  //   event.preventDefault();
+  //   onSearch(searchText);
+  // };
+
+
+
   return (
     <AppContext.Provider value={{
       handle_click, handle_click_close, show, setShow, handle_click_cart, handle_click_cart_close, showcart, setShowcart, handle_click_menu, close_menu, shownav, setShownav

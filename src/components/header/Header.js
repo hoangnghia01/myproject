@@ -11,7 +11,7 @@ import { BsMinecart } from 'react-icons/bs';
 import { BiRightArrowAlt } from 'react-icons/bi';
 import { CiBookmark } from 'react-icons/ci';
 import Headers from './Headers';
-import { MdOutlineAccountCircle } from 'react-icons/md';
+import { MdOutlineAccountCircle, MdDeleteForever } from 'react-icons/md';
 import { HiMenuAlt2 } from 'react-icons/hi';
 // <<<<<<< HEAD
 import Cart_page from '../../pages/cart_page/Cart_page';
@@ -41,26 +41,23 @@ import { AppContext } from '../../AppContext';
 
 export default function Header() {
     const { handle_click, handle_click_close, show, setShow, handle_click_cart, handle_click_cart_close, showcart, setShowcart, handle_click_menu, close_menu, shownav, setShownav
-        , backrgoudNav, setBackrgoudNav, quanlity, cart, changqty, delete1 } = useContext(AppContext)
+        , backrgoudNav, setBackrgoudNav, quanlity, cart, changqty, delete1
+        , handleSearchChange, handleSearchSubmit, searchText
+    } = useContext(AppContext)
     return (
         <div className='vav'>
             <div className='header'>
                 <Navbar expand="lg" className={`navbar ${backrgoudNav ? "setbackgroud" : ""}`} >
                     <Container className='container'>
-
-
-                        <div  className='nav_icon'>
-                        <HiMenuAlt2 onClick={handle_click_menu} />
+                        <div className='nav_icon'>
+                            <HiMenuAlt2 onClick={handle_click_menu} />
                         </div>
-                        
                         {/* <div className='nav_icon'>
                                 
                                 <p className='nav_icon1'>|</p>
                                 <p className='nav_icon2'>|</p>
                                 <p className='nav_icon3'>|</p>
                             </div> */}
-
-
                         <div className='header_left'>
                             <Link to={"/"} style={{ textDecoration: 'none' }} ><img src={logo} /></Link>
                         </div>
@@ -71,7 +68,7 @@ export default function Header() {
                                 <ul onClick={close_menu}>
                                     <li><Link to={"/"} style={{ textDecoration: 'none' }}><h3>Trang chủ</h3></Link></li>
                                     <li><Link to={"/giai-phap"} style={{ textDecoration: 'none' }} className='solusion'><h3>Giải pháp <span><GrFormDown /></span>
-                                    <ul className='menu_child'>
+                                        <ul className='menu_child'>
                                             <li><Link to={"/giai-phap/giai-phap-cho-benh-vien"}>Giải pháp cho bệnh viện</Link>
                                                 <ul className='menu_child-child'>
                                                     <li>Chuông gọi nhân viên y tế</li>
@@ -95,7 +92,7 @@ export default function Header() {
                                             <li>Bộ đàm</li>
                                         </ul>
                                     </h3>
-                                        
+
                                     </Link></li>
                                     <li><Link to={"/san-pham"} style={{ textDecoration: 'none' }} className='product'>
                                         <h3>Sản phẩm <span><GrFormDown /></span></h3>
@@ -153,7 +150,10 @@ export default function Header() {
                                             <Container className='container_con_search'>
                                                 <div className='search_input'>
                                                     <AiOutlineSearch className='icon_search_input' />
-                                                    <input placeholder='Tìm kiếm' className='input' />
+                                                    <form onSubmit={handleSearchSubmit}>
+                                                        <input placeholder='Tìm kiếm' className='input' type="text" value={searchText} onChange={handleSearchChange} />
+                                                    </form>
+
                                                 </div>
                                                 <div className='suggest'>
                                                     <p>Gợi ý</p>
@@ -194,83 +194,63 @@ export default function Header() {
                                                             <div className="product_shoppingcart">
                                                                 <div className="d-flex justify-content-between align-items-center mb-5">
                                                                     <MDBTypography tag="h3" className="fw-bold mb-0 text-black">
-                                                                        Giỏ hàng
-                                                                    </MDBTypography>
-                                                                    <MDBTypography className="mb-0 text-muted">
-                                                                        {quanlity} sản phẩm
+                                                                        Giỏ hàng ({quanlity})
                                                                     </MDBTypography>
                                                                 </div>
-
-                                                                {cart.map((product, index) =>
-                                                                    <div key={index}>
-                                                                        <div className="container_product_cart">
-                                                                            <MDBRow className="mb-4 d-flex justify-content-between align-items-center">
-                                                                                {/* <MDBCol md="2" lg="2" xl="2">
-                                                                                <img src={product.img} alt={product.name} className="rounded-3" />
-                                                                            </MDBCol> */}
-
-                                                                                <MDBCol md="2" lg="4" xl="4">
-                                                                                    <MDBTypography tag="h6" className="text-muted text-align-top">
-                                                                                        Tên hàng hoá
-                                                                                    </MDBTypography>
-                                                                                    <MDBTypography tag="h6" className="text-black mb-0">
-                                                                                        {product ? product.name : ""}
-                                                                                    </MDBTypography>
-                                                                                </MDBCol>
-                                                                                <MDBCol md="2" lg="1" xl="1">
-                                                                                    <MDBTypography tag="h6" className="text-muted text-align-top">
-                                                                                        Đơn giá
-                                                                                    </MDBTypography>
-                                                                                    <MDBTypography tag="h6" className="text-black mb-0 ">
-                                                                                        {product ? product.price : ""}$
-                                                                                    </MDBTypography>
-
-                                                                                </MDBCol>
-                                                                                <MDBCol md="1" lg="2" xl="2">
-                                                                                    <MDBTypography tag="h6" className="text-muted text-align-center;">
-                                                                                        Số lượng
-                                                                                    </MDBTypography>
-                                                                                    <MDBTypography tag="h6" className="text-black mb-0">
-                                                                                        <samp type="button" onClick={() => (changqty(product.id, -1))}>-</samp>
-                                                                                        {product.qty}
-                                                                                        <samp type="button" onClick={() => (changqty(product.id, +1))}>+</samp>
-                                                                                    </MDBTypography>
-
-
-                                                                                </MDBCol>
-                                                                                <MDBCol md="2" lg="2" xl="2" className="text-center">
-                                                                                    <MDBTypography tag="h6" className="text-muted text-align-center;">
-                                                                                        Tổng
-                                                                                    </MDBTypography>
-                                                                                    <MDBTypography tag="h6" className="mb-0">${product.qty * product.price}</MDBTypography>
-                                                                                </MDBCol>
-                                                                                <MDBCol md="1" lg="1" xl="1" className="text-center">
-                                                                                    {/* <MDBTypography tag="h6" className="text-muted text-align-center;">
-                                                                                        Xoá
-                                                                                    </MDBTypography> */}
-                                                                                    <a href="#!" className="text-muted">
-                                                                                        <VscClose fas icon="times" onClick={() => (delete1(product.id))} />
-                                                                                    </a>
-                                                                                </MDBCol>
-                                                                            </MDBRow>
-                                                                        </div>
-                                                                    </div>
-                                                                )}
+                                                                <table className="container_product_cart">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <div className='product_cart_left'>
+                                                                                <th className="delete_product_cart" ></th>
+                                                                                <th className="hinh_sp_product_cart">Hình sản phẩm</th>
+                                                                            </div>
+                                                                            <div className='product_cart_right'>
+                                                                                <th className="name_product_cart">Tên sản phẩm</th>
+                                                                                <th className="price_product_cart">Đơn giá</th>
+                                                                                <th className="qualy_product_cart">Số lượng</th>
+                                                                                <th className="total_product_cart">Tổng cộng</th>
+                                                                            </div>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        {cart.map((product, index) =>
+                                                                            <tr key={index} className='product_cart'>
+                                                                                <div className='product_cart_left'>
+                                                                                    <td className="delete_product_cart" ><MdDeleteForever fas icon="times" onClick={() => (delete1(product.id))} /></td>
+                                                                                    <td className="hinh_sp_product_cart"><img src={product.img} alt={product.name} /></td>
+                                                                                </div>
+                                                                                <div className='product_cart_right'>
+                                                                                    <td className="name_product_cart">{product ? product.name : ""}</td>
+                                                                                    <td className="price_product_cart">$
+                                                                                        {product ? product.price : ""}
+                                                                                    </td>
+                                                                                    <td className="qualy_product_cart">
+                                                                                        <tr>
+                                                                                            <td className='changqty' type="button" onClick={() => (changqty(product.id, -1))}>
+                                                                                                <span>-</span>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <span>{product.qty}</span>
+                                                                                            </td>
+                                                                                            <td className='changqty' type="button" onClick={() => (changqty(product.id, +1))}>
+                                                                                                <span >+</span>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </td>
+                                                                                    <td className="total_product_cart">${product.qty * product.price}</td>
+                                                                                </div>
+                                                                            </tr>
+                                                                        )}
+                                                                    </tbody>
+                                                                </table>
                                                                 <hr className="my-4" />
                                                                 <div className="pt-1">
                                                                     <MDBTypography tag="h6" className="cart_button_cart">
                                                                         <MDBCardText onClick={handle_click_cart_close} className="cart_button_close_cart">
                                                                             <BiArrowBack /> Tiếp tục mua sắm
                                                                         </MDBCardText>
-                                                                        {/* <MDBCardText tag="a" href="/cart" className="cart_button_thanhtoan">
-                                                                            Thanh toán
-                                                                        </MDBCardText> */}
                                                                         <Link to={"/cart"} onClick={handle_click_cart_close} className="cart_button_thanhtoan"> Thanh toán</Link>
-
                                                                     </MDBTypography>
-                                                                   
-                                                                        
-                                                                   
                                                                 </div>
                                                             </div>
                                                         </MDBCol>

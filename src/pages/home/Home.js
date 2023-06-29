@@ -62,7 +62,7 @@ export default function Home() {
                 <div>
                     <div className="con_slider">
 
-                        <img src={slider_hospital} data-aos="fade-left" data-aos-duration="500"></img>
+                        <img src={slider_hospital} data-aos="fade-left" data-aos-duration="100"></img>
                         <div className="content_slider">
                             <Container>
                                 <div className="con_content_slider" data-aos="fade-right" data-aos-duration="500">
@@ -83,7 +83,7 @@ export default function Home() {
                                 <h2>Lý do bạn nên chọn chúng tôi</h2>
                                 <div className="reasons">
 
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="4000">
+                                    <div className="reason" data-aos="fade-up" data-aos-duration="500">
                                         <Link to={"/"}>
                                             <div className="reason_icon" style={{ color: "orange", fontSize: "30px" }}><FcBriefcase /></div>
                                             <h6>Chuyên môn và kinh nghiệm</h6>
@@ -91,21 +91,21 @@ export default function Home() {
                                         </Link>
                                     </div>
 
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="1000">
+                                    <div className="reason" data-aos="fade-up" data-aos-duration="700">
                                         <Link to={"/"}>
                                             <div className="reason_icon" style={{ fontSize: "30px" }}><FcServices /></div>
                                             <h6>Sản phẩm và dịch vụ</h6>
                                             <p>Chúng tôi cam kết cung cấp sản phẩm và dịch vụ chất lượng cao, đáng tin cậy và đáp ứng tiêu chuẩn quốc tế.</p>
                                         </Link>
                                     </div>
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="2000">
+                                    <div className="reason" data-aos="fade-up" data-aos-duration="900">
                                         <Link to={"/"}>
                                             <div className="reason_icon" style={{ color: "orange", fontSize: "30px" }}><TbFileLike /></div>
                                             <h6>Độ tin cậy và hỗ trợ</h6>
                                             <p>Chúng tôi đặt sự tin tưởng và hỗ trợ khách hàng lên hàng đầu.</p>
                                         </Link>
                                     </div>
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="3000">
+                                    <div className="reason" data-aos="fade-up" data-aos-duration="1100">
                                         <Link to={"/"}>
                                             <div className="reason_icon" style={{ color: "orange", fontSize: "30px" }}><FcBullish /></div>
                                             <h6>Giá trị và hiệu quả</h6>

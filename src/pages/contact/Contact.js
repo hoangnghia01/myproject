@@ -11,7 +11,7 @@ import { Container } from 'react-bootstrap';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
-
+import contactbackground from "../../components/imgs/baner_solusion/contact_background.jpg"
 function Contact() {
     const form = useRef();
     const [formError, setFormError] = useState(false);
@@ -45,9 +45,14 @@ function Contact() {
                 }
             );
     };
-
+    const backgroundStyle = {
+        backgroundImage: `url(${contactbackground})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    };
     return (
-        <div>
+        <div  style={backgroundStyle}>
             <Container className='container_form' data-aos="zoom-in">
                 <div className='form_contact'>
                     <Container>

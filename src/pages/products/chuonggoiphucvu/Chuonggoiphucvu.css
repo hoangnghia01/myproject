@@ -1,0 +1,12 @@
+.baner_chuonggoi{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: end;
+}
+.baner_chuonggoi h2{
+    margin-bottom: 20px;
+}
+.list_chuonggoiphucvu{
+    padding: 20px 0;
+}

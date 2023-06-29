@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
 import { AppContext } from "../../../AppContext";
 import "./Blog_ditail.css"
+import huongdanbaner from "../../../components/imgs/baner_solusion/huongdan_baner.jpg"
 export default function Blog_ditail() {
     const { blog } = useContext(AppContext);
     const [blog_dt, setBlog_dt] = useState(null);
@@ -16,9 +17,16 @@ export default function Blog_ditail() {
         const foundblog_dt = blog.find((item) => item.id === parseInt(id));
         setBlog_dt(foundblog_dt);
     }, [id, blog]);
-    
+    const backgroundStyle = {
+        backgroundImage: `url(${huongdanbaner})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    };
     return (
         <div className="blog_ditail">
+            <div style={backgroundStyle} className="blog_page_title" data-aos="fade-down">
+            </div>
             <Container>
                 <div className="blog_ditail_container" data-aos="fade-up"
                     data-aos-duration="1000">

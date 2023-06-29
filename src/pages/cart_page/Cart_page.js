@@ -14,13 +14,14 @@ import {
 
 import "./Cart_page.css"
 import { AppContext } from "../../AppContext";
-import { VscClose } from 'react-icons/vsc';
+import { MdDeleteForever } from 'react-icons/md';
 import { BiArrowBack } from 'react-icons/bi';
 import { useContext } from "react";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Cart_page() {
     const { cart, quanlity, changqty, delete1 } = useContext(AppContext)
@@ -68,14 +69,14 @@ export default function Cart_page() {
                                         <div className="p-5">
                                             <div className="d-flex justify-content-between align-items-center mb-5">
                                                 <MDBTypography tag="h1" className="fw-bold mb-0 text-black">
-                                                    Giỏ hàng của bạn
+                                                    Giỏ hàng của bạn 
                                                 </MDBTypography>
-                                                <MDBTypography className="mb-0 text-muted">
+                                                {/* <MDBTypography className="mb-0 text-muted">
                                                     {quanlity} sản phẩm
-                                                </MDBTypography>
+                                                </MDBTypography> */}
                                             </div>
                                             <div>
-                                                <table className="table_cart_page">
+                                                {/* <table className="table_cart_page">
                                                     <thead>
                                                         <tr>
                                                             <th className="hinh_sp_cart_page">Hình sản phẩm</th>
@@ -104,23 +105,69 @@ export default function Cart_page() {
                                                             </tr>
                                                         )}
                                                     </tbody>
+                                                </table> */}
+                                                <table className="container_product_cart">
+                                                    <thead>
+                                                        <tr>
+                                                            <div className='product_cart_left'>
+                                                                <th className="delete_product_cart" ></th>
+                                                                <th className="hinh_sp_product_cart">Hình sp</th>
+                                                            </div>
+                                                            <div className='product_cart_right'>
+                                                                <th className="name_product_cart">Tên sản phẩm</th>
+                                                                <th className="price_product_cart">Đơn giá</th>
+                                                                <th className="qualy_product_cart">Số lượng</th>
+                                                                <th className="total_product_cart">Tổng</th>
+                                                            </div>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {cart.map((product, index) =>
+                                                            <tr key={index} className='product_cart'>
+                                                                <div className='product_cart_left'>
+                                                                    <td className="delete_product_cart" ><MdDeleteForever fas icon="times" onClick={() => (delete1(product.id))} /></td>
+                                                                    <td className="hinh_sp_product_cart"><img src={product.img} alt={product.name} /></td>
+                                                                </div>
+                                                                <div className='product_cart_right'>
+                                                                    <td className="name_product_cart">{product ? product.name : ""}</td>
+                                                                    <td className="price_product_cart">$
+                                                                        {product ? product.price : ""}
+                                                                    </td>
+                                                                    <td className="qualy_product_cart">
+                                                                        <tr>
+                                                                            <td className='changqty' type="button" onClick={() => (changqty(product.id, -1))}>
+                                                                                <span>-</span>
+                                                                            </td>
+                                                                            <td>
+                                                                                <span>{product.qty}</span>
+                                                                            </td>
+                                                                            <td className='changqty' type="button" onClick={() => (changqty(product.id, +1))}>
+                                                                                <span >+</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </td>
+                                                                    <td className="total_cart_page">${product.qty * product.price}</td>
+                                                                </div>
+                                                            </tr>
+                                                        )}
+                                                    </tbody>
                                                 </table>
                                             </div>
 
                                             <hr className="my-4" />
-                                            <div className="pt-5">
+                                            <div className="pt-3">
                                                 <MDBTypography tag="h6" className="mb-0">
-                                                    <MDBCardText tag="a" href="/san-pham" className="text-body">
+                                                    <Link to="/san-pham" className="text-body">
                                                         <BiArrowBack /> Back
                                                         to shop
-                                                    </MDBCardText>
+                                                    </Link>
                                                 </MDBTypography>
                                             </div>
                                         </div>
                                     </MDBCol>
                                     <MDBCol lg="4" className="bg-grey">
-                                        <div className="p-5">
-                                            <MDBTypography tag="h3" className="fw-bold mb-5 mt-2 pt-1">
+                                        <div className="p-4">
+                                            <MDBTypography tag="h3" className="fw-bold mb-4 mt-2 pt-1">
                                                 Thanh toán
                                             </MDBTypography>
                                             <div className="d-flex justify-content-between mb-4">
@@ -155,10 +202,10 @@ export default function Cart_page() {
                                                     {form_orderError && <p className="error-message">Vui lòng điền đầy đủ thông tin</p>}
                                                 </div>
 
-
+                                                <hr className="my-4" />
                                                 <input type="submit" value=" Đặt hàng" className='button_send' />
                                             </form>
-                                            <hr className="my-4" />
+                                            
                                             {/* <MDBBtn color="dark orange" block size="lg">
                                                 Đặt hàng
                                             </MDBBtn> */}
