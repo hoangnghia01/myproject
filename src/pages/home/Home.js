@@ -28,7 +28,7 @@ import logo_tch from "../../components/logo/logo_doitac/the_coffee_house_logo.jp
 import { useContext } from "react"
 import { AppContext } from "../../AppContext"
 import { CgMenuLeft } from 'react-icons/cg';
-import ScrollToTop from "../../components/scrolltotop/ScrollToTop"
+
 import baner_nhietdo from "../../components/imgs/blog_img/img4.png"
 import baner_nhamay from "../../components/imgs/blog_img/img5.png"
 import baner_camera from "../../components/imgs/blog_img/img6.png"
@@ -55,9 +55,7 @@ export default function Home() {
 
     return (
         <div>
-            {/* <Header /> */}
-            <ScrollToTop />
-            {/* <Headers/> */}
+          
             <main>
                 <div>
                     <div className="con_slider">
