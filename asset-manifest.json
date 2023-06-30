@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/myproject/static/css/main.bdeb05a7.css",
-    "main.js": "/myproject/static/js/main.f8c45698.js",
+    "main.css": "/myproject/static/css/main.d0d2a40c.css",
+    "main.js": "/myproject/static/js/main.53976a43.js",
     "static/media/nha-hang-1.png": "/myproject/static/media/nha-hang-1.b724b78becfe9037d19e.png",
+    "static/media/hinhnensanpham.jpg": "/myproject/static/media/hinhnensanpham.9b2cd7231dbf0602faf0.jpg",
+    "static/media/huongdan_baner.jpg": "/myproject/static/media/huongdan_baner.355ed445666bbd182fd6.jpg",
     "static/media/slider_hospital.png": "/myproject/static/media/slider_hospital.f925fdf2553ab93f34da.png",
+    "static/media/contact_background.jpg": "/myproject/static/media/contact_background.b8e31a56158ea399859b.jpg",
     "static/media/hospital1.jpg": "/myproject/static/media/hospital1.20ad0f13e995d3b85314.jpg",
     "static/media/nurse-call.PNG": "/myproject/static/media/nurse-call.523f8c1ccac58fbdbc40.PNG",
     "static/media/img5.png": "/myproject/static/media/img5.9cdc422b0dfd3ce91fca.png",
@@ -23,7 +26,10 @@
     "static/media/logo.png": "/myproject/static/media/logo.59ef6d6583df80c41658.png",
     "static/media/img4.png": "/myproject/static/media/img4.bd05a66783fd852eabdb.png",
     "static/media/bao-dong-do.png": "/myproject/static/media/bao-dong-do.d40046ea284b7ac19ccd.png",
+    "static/media/detail_sra.jpg": "/myproject/static/media/detail_sra.146c74c94aba5cddfbc5.jpg",
     "static/media/chuong-goi-y-ta.png": "/myproject/static/media/chuong-goi-y-ta.3b322cafcf6424d30e88.png",
+    "static/media/sll-300.jpg": "/myproject/static/media/sll-300.18106186f1d0dce98561.jpg",
+    "static/media/sb-700.jpg": "/myproject/static/media/sb-700.f46beb8b176d2d4c646b.jpg",
     "static/media/goi_trong_vs.png": "/myproject/static/media/goi_trong_vs.204d57f9e348234caf6f.png",
     "static/media/phuc_long.jpg": "/myproject/static/media/phuc_long.56a4135dc27dc43d20ba.jpg",
     "static/media/logo_emart.png": "/myproject/static/media/logo_emart.4ff99e41fe69c2a99ec1.png",
@@ -32,10 +38,13 @@
     "static/media/logo_bv_hoan_my.png": "/myproject/static/media/logo_bv_hoan_my.e861522505db2b0e1148.png",
     "static/media/application_hospital_s1.png": "/myproject/static/media/application_hospital_s1.9956d5ef05639343c45c.png",
     "static/media/logo_sukiya.jpg": "/myproject/static/media/logo_sukiya.f976537a7132904a7a14.jpg",
+    "static/media/gp-200r-10.jpg": "/myproject/static/media/gp-200r-10.b8d9ffc73bbe737665b8.jpg",
     "static/media/st600.png": "/myproject/static/media/st600.1f984ea9999818c0d0da.png",
     "static/media/goi_y_ta.png": "/myproject/static/media/goi_y_ta.ab5ad80c230dd0249173.png",
+    "static/media/gp-101r-10.jpg": "/myproject/static/media/gp-101r-10.6327e2443e1a34004f2b.jpg",
     "static/media/sra330.jpg": "/myproject/static/media/sra330.2cfd18b1a930b3cd9155.jpg",
     "static/media/sr-2003.jpg": "/myproject/static/media/sr-2003.aeb633e3afc2c1024cb7.jpg",
+    "static/media/st-5010-fr3003som.jpg": "/myproject/static/media/st-5010-fr3003som.b2e6784d86c1f06524d9.jpg",
     "static/media/call_stt.jpg": "/myproject/static/media/call_stt.7647a9447793436c3198.jpg",
     "static/media/st-100-w.jpg": "/myproject/static/media/st-100-w.e7c5f74e5c5f7c7f82e4.jpg",
     "static/media/the_rung.jpg": "/myproject/static/media/the_rung.22eeb862ae2f01ac1aaa.jpg",
@@ -43,16 +52,17 @@
     "static/media/the_coffee_house_logo.jpg": "/myproject/static/media/the_coffee_house_logo.4065bcdf888385d7f229.jpg",
     "static/media/baner_solusion_2.png": "/myproject/static/media/baner_solusion_2.a994e97ccd397498b082.png",
     "static/media/st-200.jpg": "/myproject/static/media/st-200.0cab12104be7db115099.jpg",
+    "static/media/srl200.jpg": "/myproject/static/media/srl200.dcd9a5a4ce612297eab5.jpg",
     "static/media/hospital_solusion_img.png": "/myproject/static/media/hospital_solusion_img.266611071999eec0ab87.png",
     "static/media/st-300.jpg": "/myproject/static/media/st-300.8cb156cb6190a7ca2d58.jpg",
     "static/media/bao_khan_cap.jpg": "/myproject/static/media/bao_khan_cap.84997894eb59a0a1b162.jpg",
     "static/media/logo_bv.jpg": "/myproject/static/media/logo_bv.302e4950c3f60bce3926.jpg",
     "index.html": "/myproject/index.html",
-    "main.bdeb05a7.css.map": "/myproject/static/css/main.bdeb05a7.css.map",
-    "main.f8c45698.js.map": "/myproject/static/js/main.f8c45698.js.map"
+    "main.d0d2a40c.css.map": "/myproject/static/css/main.d0d2a40c.css.map",
+    "main.53976a43.js.map": "/myproject/static/js/main.53976a43.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdeb05a7.css",
-    "static/js/main.f8c45698.js"
+    "static/css/main.d0d2a40c.css",
+    "static/js/main.53976a43.js"
   ]
 }
