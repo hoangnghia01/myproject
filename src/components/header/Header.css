@@ -256,7 +256,9 @@
     align-items: center;
     padding: 10px 0px;
 }
-
+.container_search .search_input form{
+    width: 100%;
+}
 .container_search .search_input .icon_search_input {
     font-size: 25px;
 

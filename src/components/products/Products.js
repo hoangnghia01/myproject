@@ -37,6 +37,7 @@ export default function Products() {
         backgroundSize: "cover",
         backgroundPosition: "center",
     };
+    
     return (
         <nav className="product_list">
             <div style={backgroundStyle} className="productsList" data-aos="fade-down">
@@ -46,24 +47,7 @@ export default function Products() {
 
             </div>
             <Container >
-                {/* <div className="product_list_page_top">
-                    <h2 className="productsList">Sản phẩm</h2>
-                  
-                    <DropdownButton id="dropdown-item-button" title={`Lọc sản phẩm (${filteredProducts.length})`}>
-                        <Dropdown.Item onClick={() => filterProducts("all")}>
-                            Tất cả sản phẩm
-                        </Dropdown.Item>
-                        <Dropdown.Item onClick={() => filterProducts("Man hinh")}>
-                            Màn hình
-                        </Dropdown.Item>
-                        <Dropdown.Item onClick={() => filterProducts("Nut chuong")}>
-                            Nút chuông gọi
-                        </Dropdown.Item>
-                        <Dropdown.Item onClick={() => filterProducts("Korea")}>
-                            Hàn Quốc
-                        </Dropdown.Item>
-                    </DropdownButton>
-                </div> */}
+                
                 <div className="product_list_page_list">
                     <Row>
                         <Col lg={2} xs={3}>
@@ -115,6 +99,7 @@ export default function Products() {
                         </Col>
                     ))}
                 </Row>
+                
             </Container>
         </nav >
     )

@@ -155,14 +155,15 @@ export default function Header() {
                                                     </form>
 
                                                 </div>
+
                                                 <div className='suggest'>
                                                     <p>Gợi ý</p>
                                                     <ul>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Chuong goi nha hang</li></Link>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    The tu phuc vu</li></Link>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Nut chuong goi</li></Link>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Man hinh hien thi</li></Link>
-                                                        <Link to={"/"}> <li><BiRightArrowAlt />    Mua sam truc tuyen</li></Link>
+                                                        <Link to={"/giai-phap/giai-phap-cho-nha-hang"} onClick={handle_click_close}> <li><BiRightArrowAlt />    Chuông gọi nhà hàng</li></Link>
+                                                        <Link to={"/giai-phap/the-rung-tu-phuc-vu"} onClick={handle_click_close}> <li><BiRightArrowAlt />    Thẻ tự phục vụ</li></Link>
+                                                        <Link to={"/san-pham"} onClick={handle_click_close}> <li><BiRightArrowAlt />    Nút chuông gọi</li></Link>
+                                                        <Link to={"/san-pham"} onClick={handle_click_close}> <li><BiRightArrowAlt />    Màn hình hiển thị</li></Link>
+                                                        <Link to={"/san-pham"} onClick={handle_click_close}> <li><BiRightArrowAlt />    Mua sắm trực tuyến</li></Link>
                                                     </ul>
                                                 </div>
                                             </Container>

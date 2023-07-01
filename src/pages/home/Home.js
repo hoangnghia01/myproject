@@ -190,7 +190,7 @@ export default function Home() {
 
                                 <Row>
                                     {solusions && solusions.slice(0, 4).map((item, index) => (
-                                        <Col xs={12} sm={6} lg={3} md={6} key={index} >
+                                        <Col xs={6} sm={6} lg={3} md={6} key={index} >
                                             <div className="solusion_other_con">
                                                 <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1000">
                                                     <div className="solusion_other_con_card_img"><img src={item.img_slusion} alt={item.name_slusion} /></div>
@@ -249,8 +249,8 @@ export default function Home() {
                                         <div className="home_blog_card" data-aos="fade-up" data-aos-duration="1000" key={index}>
                                             <div className="home_blog_card_img"><img src={item.img_blog} alt={item.name} /></div>
                                             <div className="home_blog_card_content">
-                                                <h5>{item ? item.name_blog : ""}</h5>
-                                                <p>{item ? item.short_description_blog : ""}</p>
+                                                <h6>{item ? item.name_blog : ""}</h6>
+                                                {/* <p>{item ? item.short_description_blog : ""}</p> */}
                                                 <Link to={`/blog/${item.id}`}  >Xem thêm <FiChevronsRight /></Link>
                                             </div>
                                         </div>
