@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myproject/static/css/main.d0d2a40c.css",
-    "main.js": "/myproject/static/js/main.53976a43.js",
+    "main.css": "/myproject/static/css/main.d354db52.css",
+    "main.js": "/myproject/static/js/main.12ffde32.js",
     "static/media/nha-hang-1.png": "/myproject/static/media/nha-hang-1.b724b78becfe9037d19e.png",
     "static/media/hinhnensanpham.jpg": "/myproject/static/media/hinhnensanpham.9b2cd7231dbf0602faf0.jpg",
     "static/media/huongdan_baner.jpg": "/myproject/static/media/huongdan_baner.355ed445666bbd182fd6.jpg",
@@ -58,11 +58,11 @@
     "static/media/bao_khan_cap.jpg": "/myproject/static/media/bao_khan_cap.84997894eb59a0a1b162.jpg",
     "static/media/logo_bv.jpg": "/myproject/static/media/logo_bv.302e4950c3f60bce3926.jpg",
     "index.html": "/myproject/index.html",
-    "main.d0d2a40c.css.map": "/myproject/static/css/main.d0d2a40c.css.map",
-    "main.53976a43.js.map": "/myproject/static/js/main.53976a43.js.map"
+    "main.d354db52.css.map": "/myproject/static/css/main.d354db52.css.map",
+    "main.12ffde32.js.map": "/myproject/static/js/main.12ffde32.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0d2a40c.css",
-    "static/js/main.53976a43.js"
+    "static/css/main.d354db52.css",
+    "static/js/main.12ffde32.js"
   ]
 }
