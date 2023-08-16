@@ -10,7 +10,7 @@ main {
     justify-content: center;
     align-items: center; */
     border-radius: 20px;
-    /* border: #000000 2px solid; */
+    
     overflow: hidden;
 }
 
@@ -42,7 +42,7 @@ main {
 
 }
 
-*/ .content_slider .con_content_slider p {
+.content_slider .con_content_slider p {
     line-height: 30px;
 }
 
@@ -584,8 +584,11 @@ main {
         display: block;
         text-align: center;
         width: 50%;
-    }.con_rooms .advertisement {
-        width: 50%;}
+    }
+
+    .con_rooms .advertisement {
+        width: 50%;
+    }
 
     .classify_rooms_items {
         justify-content: center;
@@ -615,7 +618,7 @@ main {
 
     .solusion_other_con_card {
         width: 80%;
-        
+
     }
 
     .title_container_blog_home {
