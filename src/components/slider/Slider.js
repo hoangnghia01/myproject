@@ -18,13 +18,13 @@ export default function Slider({ product }) {
       prevIndex === 0 ? product.length - 1 : prevIndex - 1
     );
   };
-  const isPrevDisabled = activeIndex === 0; // Kiểm tra xem có ở slide đầu tiên hay không
+  const isPrevDisabled = activeIndex === 0;
   return (
     <div className="slider">
       <div className="slider-product" style={{ transform: `translateX(-${activeIndex * 25}%)` }}>
         <div className='baner_product'>
           <div className='con_baner_product_dau'>
-            <img src={banernut}/>
+            <img src={banernut} />
           </div>
         </div>
         {/* Các slide sản phẩm */}

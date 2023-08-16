@@ -1,12 +1,23 @@
-.baner_chuonggoi{
+.baner_rooms_page{
     width: 100%;
-    height: 25vh;
+    height: 50vh;
+    border-radius: 20px;
     display: flex;
-    align-items: end;
+    align-items: center;
+    text-align: center;
+    
 }
-.baner_chuonggoi h2{
-    margin-bottom: 20px;
+.baner_rooms_page h1{
+    font-size: 70px;
+    color: #000000;
 }
-.list_chuonggoiphucvu{
-    padding: 20px 0;
+.rooms_page_room{
+    margin: 50px 0;
+}
+.container_room{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0 ;
+    width: 100%;
 }

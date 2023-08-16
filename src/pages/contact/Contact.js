@@ -1,21 +1,18 @@
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
-import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import "./Contact.css"
+import { AiOutlinePhone } from 'react-icons/ai';
+import { MdOutlineMail } from 'react-icons/md';
+import { CiLocationOn } from 'react-icons/ci';
+
 import { Container } from 'react-bootstrap';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
-import contactbackground from "../../components/imgs/baner_solusion/contact_background.jpg"
+import baner_contact from "../../pages/imgs/baner_contact.jpg"
+
 function Contact() {
     const form = useRef();
     const [formError, setFormError] = useState(false);
-
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -45,14 +42,44 @@ function Contact() {
                 }
             );
     };
-    const backgroundStyle = {
-        backgroundImage: `url(${contactbackground})`,
+    const backgroundStyle1 = {
+        backgroundImage: `url(${baner_contact})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
     };
     return (
-        <div  style={backgroundStyle}>
+        <div>
+            <div style={backgroundStyle1} className="baner_contact" data-aos="fade-down">
+                <Container>
+                    <h1>Contact</h1>
+                </Container>
+            </div>
+            <div className="info_contact" data-aos="fade-down">
+                <Container>
+                    <div className='contact'>
+                        <div className='contact_icon'>
+                            <AiOutlinePhone/>
+                        </div>
+                        <h3>Phone</h3>
+                        <h6>097 977 2145</h6>
+                    </div>
+                    <div className='contact'>
+                        <div className='contact_icon'>
+                            <MdOutlineMail/>
+                        </div>
+                        <h3>Email</h3>
+                        <h6>datphongmuine@gmail.com</h6>
+                    </div>
+                    <div className='contact'>
+                        <div className='contact_icon'>
+                            <CiLocationOn/>
+                        </div>
+                        <h3>Location</h3>
+                        <h6>097 977 2145</h6>
+                    </div>
+                </Container>
+            </div>
             <Container className='container_form' data-aos="zoom-in">
                 <div className='form_contact'>
                     <Container>
@@ -63,19 +90,19 @@ function Contact() {
                     </Container>
                     <form ref={form} onSubmit={sendEmail} className='form_contact_input'>
                         <div className='form_group'>
-                            <label>Name*</label>
-                            <input type="text" name="user_name" placeholder="Nhập tên" />
+                            {/* <label>Name*</label> */}
+                            <input type="text" name="user_name" placeholder="Họ & tên*" />
                         </div>
                         <div className='form_group'>
-                            <label>Sdt*</label>
-                            <input type="number" name="user_phone" placeholder="Nhập sdt" />
+                            {/* <label>Sdt*</label> */}
+                            <input type="number" name="user_phone" placeholder="Số điện thoại*" />
                         </div>
                         <div className='form_group'>
-                            <label>Email*</label>
-                            <input type="email" name="user_email" placeholder="Nhập email" />
+                            {/* <label>Email*</label> */}
+                            <input type="email" name="user_email" placeholder="Email*" />
                         </div>
                         <div className='form_group'>
-                            <label>Message*</label>
+                            {/* <label>Message*</label> */}
                             <textarea name="message" placeholder="Nhập tin nhắn cho chúng tôi" />
                         </div>
                         {formError && <p className="error-message">Vui lòng điền đầy đủ thông tin</p>}

@@ -29,25 +29,17 @@ function App() {
         <Header />
         <ScrollToTop />
         <Routes>
-
           <Route path='/' element={<Home />}></Route>
           <Route path='/cart' element={<Cart_page />}></Route>
-          <Route path='/giai-phap' element={<Solutions />}>
-
-          </Route>
+          <Route path='/giai-phap' element={<Solutions />}> </Route>
           <Route path='/giai-phap/giai-phap-cho-benh-vien' element={<Nursecall_solusion />}></Route>
           <Route path='/giai-phap/giai-phap-cho-nha-hang' element={<Restaurant_solusion />}></Route>
           <Route path='/giai-phap/:link' element={<Solusion_ditail />}></Route>
-
-
-          <Route path='/san-pham' element={<Products />}>
-
-          </Route>
+          <Route path='/san-pham' element={<Products />}></Route>
           <Route path='/san-pham/:id' element={<Product_ditail />}></Route>
           <Route path='/san-pham/chuong-goi-phuc-vu' element={<Chuonggoiphucvu />}></Route>
           <Route path='/blog' element={<Blog />}></Route>
           <Route path='/blog/:id' element={<Blog_ditail />}></Route>
-
           <Route path='/lien-he' element={<Contact />}></Route>
         </Routes>
         <Footer />

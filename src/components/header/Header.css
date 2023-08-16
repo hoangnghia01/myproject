@@ -4,7 +4,8 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Nunito Sans', sans-serif;
-
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .vav {
@@ -20,13 +21,14 @@
     width: 100%;
     position: fixed;
     z-index: 10;
+    font-family: 'Jost', sans-serif;
+    color: #000;
 }
 
 .navbar {
     padding: 5px;
     height: 10vh;
     background: none;
-
     z-index: 100;
     display: flex;
     flex-wrap: unset;
@@ -76,7 +78,7 @@
 
 .menu {
 
-    width: 40%;
+    width: 60%;
 
 }
 
@@ -186,6 +188,21 @@
     display: block;
     z-index: 100;
 }
+
+.contactFacebook .Facebook{
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin: 0;
+color: #000;
+width: 150px;
+height: 50px;
+text-decoration: none;
+border: 1px solid #000;
+}
+
+
+
 
 .header_right_icon {
     display: flex;
@@ -571,7 +588,22 @@ cursor: pointer;
     display: none;
     font-size: 20px;
 }
-
+.iconFacebook{
+    display: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    /* border: 1px solid #000; */
+    /* padding: 5px; */
+    /* width: 50px;
+    height: 50px; */
+}
+.iconFacebook{
+    display: none;
+}
 @media only screen and (max-width: 992px) {
     .container {
         display: flex;
@@ -707,6 +739,12 @@ cursor: pointer;
         margin: 0;
         padding: 0;
 
+    }
+    .Facebook{
+        display: none;
+    }
+    .iconFacebook{
+        display: block;
     }
 
    

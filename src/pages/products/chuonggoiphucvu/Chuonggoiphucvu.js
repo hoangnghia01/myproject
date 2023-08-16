@@ -4,6 +4,7 @@ import Header from "../../../components/header/Header";
 import Slider from "../../../components/slider/Slider"
 import { useContext } from 'react';
 import { AppContext } from "../../../AppContext";
+import Card_product from "../../../components/products/card_product/Card_product";
 import banersanpham from "../../../components/imgs/baner_solusion/hinhnensanpham.jpg"
 export default function Chuonggoiphucvu() {
     const { products } = useContext(AppContext)
@@ -17,33 +18,19 @@ export default function Chuonggoiphucvu() {
     };
     return (
         <div>
-            <div className="con_chuonggoiphucvu">
-                <div className="baner_chuonggoi" style={backgroundStyle} >
+            <div className="rooms_page">
+                <div className="baner_rooms_page" style={backgroundStyle} >
                     <Container>
-                        <h2>Chuông gọi phục vụ</h2>
+                        <h2>PHONG 1 GIUONG NGU</h2>
                     </Container>
-
                 </div>
-                <div className="list_chuonggoiphucvu">
-                    <div className="brand">
-                        <Container>
-                            <h2>
-                                Hãng Syscall Hàn Quốc
-                            </h2>
-                            <h3>Nút chuông gọi</h3>
-                        </Container>
-                        <div className="lider_sanpham_nut">
-                            <Slider product={nutchuongs} />
-                        </div>
-                        <Container>
-                            <h3>Thiết bị hiển thị</h3>
-                        </Container>
+                <Container className="container_room">
+                    {products.map((item, index) => (
 
-                        <div className="lider_sanpham_hienthi">
-                            <Slider product={manhinhs} />
-                        </div>
-                    </div>
-                </div>
+                        <Card_product key={index} product={item} />
+
+                    ))}
+                </Container>
             </div>
         </div>
     )

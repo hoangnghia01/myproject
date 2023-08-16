@@ -1,268 +1,235 @@
-import Header from "../../components/header/Header"
-import Headers from "../../components/header/Headers"
-import Footer from "../../components/footer/Footer"
+import React, { useRef, useState } from "react";
 import "./Home.css"
-import hospital1 from "../imgs/hospital1.jpg"
-import slider_hospital from "../imgs/slider_hospital.png"
-import baner_solusion_2 from "../imgs/baner_solusion_2.png"
-import hospital_solusion_img from "../imgs/hospital_solusion_img.png"
+
+import biaweb from "../imgs/biaweb.jpeg"
+import hinhnen from "../imgs/hinhnen.jpeg"
+import hinhnen2 from "../imgs/hinhnen2.jpeg"
+import hinh2 from "../imgs/baner_room.jpg"
+import { AiOutlineSafetyCertificate } from 'react-icons/ai';
+// import { MdPool } from 'react-icons/md';
+import { FaChevronRight, FaChevronLeft, FaSwimmingPool } from 'react-icons/fa';
+import { MdGroups, MdOutlineLocalLaundryService } from 'react-icons/md';
+import { IoBedOutline, IoMdCar, IoRestaurantOutline } from 'react-icons/io5';
+import { LuParkingCircle } from 'react-icons/lu';
+import One_Bedroom from "../imgs/One_Bedroom.jpeg"
+import { BsChevronRight } from 'react-icons/bs';
+import { BiSpa } from 'react-icons/bi';
+import { CgGym } from 'react-icons/cg';
+import { LuConciergeBell } from 'react-icons/lu';
+import Slider from "../../components/slider1/Slider"
+import Card_product from "../../components/products/card_product/Card_product"
 import { Container, Carousel, Col, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import { BiChevronRight } from 'react-icons/bi';
-import { TbFileLike, TbH5 } from 'react-icons/tb';
-import { FcServices, FcBullish, FcBriefcase } from 'react-icons/fc';
-import { FiChevronsRight } from 'react-icons/fi';
-import { useEffect } from "react"
-import logo from "../../components/logo/logo.png"
-import logohoanmy from "../../components/logo/logo_doitac/logo_bv_hoan_my.png"
-import highland from "../../components/logo/logo_doitac/Highlands-Coffee-ogo.png"
-import logo_bv from "../../components/logo/logo_doitac/logo_bv.jpg"
-// import logo_bv_auco from "../../components/logo/logo_doitac/logo_bv_âu cơ.png"
-import logo_emart from "../../components/logo/logo_doitac/logo_emart.png"
-import logo_jollibe from "../../components/logo/logo_doitac/logo_jollibe.jpg"
-import logo_king_cf from "../../components/logo/logo_doitac/logo_king_cf.png"
-import logo_sukiya from "../../components/logo/logo_doitac/logo_sukiya.jpg"
-import logo_vinamilk from "../../components/logo/logo_doitac/logo_vinamilk.png"
-import logo_phuclong from "../../components/logo/logo_doitac/phuc_long.jpg"
-import logo_tch from "../../components/logo/logo_doitac/the_coffee_house_logo.jpg"
+import Calender from "../../components/calender/Calender.js";
 import { useContext } from "react"
 import { AppContext } from "../../AppContext"
-import { CgMenuLeft } from 'react-icons/cg';
 
-import baner_nhietdo from "../../components/imgs/blog_img/img4.png"
-import baner_nhamay from "../../components/imgs/blog_img/img5.png"
-import baner_camera from "../../components/imgs/blog_img/img6.png"
-import baner_bodam from "../../components/imgs/blog_img/img7.png"
-
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import Slider from "../../components/slider/Slider"
-
-const images = [
-    logohoanmy,
-    highland,
-    // logo_bv_auco,
-
-    logo_emart,
-    logo_jollibe,
-    logo_emart,
-    logo_vinamilk,
-    logo_phuclong,
-    logo_tch
-]
 export default function Home() {
-    const { blog, solusions } = useContext(AppContext)
-
+    const { blog, solusions, products } = useContext(AppContext);
+    const [selectedDate, setSelectedDate] = useState(null);
+    const imagesbaner = [
+        biaweb, hinhnen, hinhnen2
+    ]
     return (
         <div>
-          
             <main>
                 <div>
-                    <div className="con_slider">
-
-                        <img src={slider_hospital} data-aos="fade-left" data-aos-duration="100"></img>
-                        <div className="content_slider">
+                    <div className="home_slider">
+                        <Slider images={imagesbaner} autoSlideInterval={5000} />
+                        <div className="con_content_slider">
+                            <h2>CĂN HỘ KHÁCH SẠN APEC MŨI NÉ</h2>
+                        </div>
+                    </div>
+                    <div className="why_choose_utilities">
+                        <div className="con_why_choose_utilities">
                             <Container>
-                                <div className="con_content_slider" data-aos="fade-right" data-aos-duration="500">
-                                    <h2>Nâng cao giá trị và hiệu quả cho doanh nghiệp của bạn.</h2>
-                                    <p>Chúng tôi tin rằng ctsvn.vn sẽ là điểm đến đáng tin cậy cho những giải pháp công nghệ thông tin chất lượng và tận tâm, giúp doanh nghiệp của bạn phát triển và tiến xa hơn trong thị trường.</p>
-                                    <h4>--- -</h4>
-                                    <Link to={"/giai-phap"}>Xem thêm</Link>
+                                {/* <h1>Dịch vụ</h1> */}
+                                <div className="con_why_choose_title_utilities">
+                                    <h1>CÁC TIỆN ÍCH TẠI APEC MŨI NÉ</h1>
+                                    <p>- - - - - - - - - -</p>
+                                    <h6>Tinh tế từ thiết kế đến tiện nghi, cho dù bạn đi du lịch để thư giãn, nạp lại năng lượng hay nuông chiều bản thân, đội ngũ của chúng tôi cam kết mang đến một kỳ nghỉ mà bạn sẽ không bao giờ quên.</h6>
+                                </div>
+                                <div className="utilities">
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="500">
+                                        <div className="reason_icon"><LuParkingCircle /></div>
+                                        <h6>Parking</h6>
+                                    </div>
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="700">
+                                        <div className="reason_icon"><AiOutlineSafetyCertificate /></div>
+                                        <h6>Safe</h6>
+                                    </div>
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="900">
+                                        <div className="reason_icon"><FaSwimmingPool /></div>
+                                        <h6>Swimming Pool</h6>
+                                    </div>
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="1100">
+                                        <div className="reason_icon"><BiSpa /></div>
+                                        <h6>Spa</h6>
+                                    </div>
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="1100">
+                                        <div className="reason_icon" ><IoRestaurantOutline /></div>
+                                        <h6>Restaurant</h6>
+                                    </div>
+                                </div>
+                                <div className="utilities">
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="500">
+                                        <div className="reason_icon"><MdOutlineLocalLaundryService /></div>
+                                        <h6>In-house Laundry</h6>
+                                    </div>
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="700">
+                                        <div className="reason_icon"><CgGym /></div>
+                                        <h6>Gym</h6>
+                                    </div>
+                                    <div className="utilitie" data-aos="fade-up" data-aos-duration="700">
+                                        <div className="reason_icon"><LuConciergeBell /></div>
+                                        <h6>Room Service</h6>
+                                    </div>
                                 </div>
                             </Container>
+
                         </div>
                     </div>
-
-                    <div className="why_choose">
-
-                        <div className="con_why_choose">
-
+                    <div className="classify_rooms">
+                        <div className="con_classify_rooms">
                             <Container>
-                                <h2>Lý do bạn nên chọn chúng tôi</h2>
-                                <div className="reasons">
+                                <div className="con_classify_rooms_title">
+                                    <h1>Căn hộ Apec</h1>
+                                    <p>- - - - - - -</p>
 
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="500">
+                                </div>
+                                <div className="classify_rooms_items">
+                                    <div className="rooms_item" data-aos="fade-up" data-aos-duration="500">
                                         <Link to={"/"}>
-                                            <div className="reason_icon" style={{ color: "orange", fontSize: "30px" }}><FcBriefcase /></div>
-                                            <h6>Chuyên môn và kinh nghiệm</h6>
-                                            <p>Chúng tôi hiểu rõ các yêu cầu và thách thức của ngành công nghiệp và sẵn sàng đưa ra các giải pháp phù hợp.</p>
-                                        </Link>
-                                    </div>
+                                            <div className="rooms_item_img"><img src={One_Bedroom} /></div>
+                                            <div className="rooms_item_content">
+                                                <h3>Phòng 1 giường</h3>
+                                                <div className="rooms_item_content_icon">
+                                                    <IoBedOutline className="icon" />
+                                                    <p>1 King Bed</p>
+                                                    <MdGroups className="icon" />
+                                                    <p>1 Guests</p>
+                                                </div>
 
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="700">
-                                        <Link to={"/"}>
-                                            <div className="reason_icon" style={{ fontSize: "30px" }}><FcServices /></div>
-                                            <h6>Sản phẩm và dịch vụ</h6>
-                                            <p>Chúng tôi cam kết cung cấp sản phẩm và dịch vụ chất lượng cao, đáng tin cậy và đáp ứng tiêu chuẩn quốc tế.</p>
-                                        </Link>
-                                    </div>
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="900">
-                                        <Link to={"/"}>
-                                            <div className="reason_icon" style={{ color: "orange", fontSize: "30px" }}><TbFileLike /></div>
-                                            <h6>Độ tin cậy và hỗ trợ</h6>
-                                            <p>Chúng tôi đặt sự tin tưởng và hỗ trợ khách hàng lên hàng đầu.</p>
-                                        </Link>
-                                    </div>
-                                    <div className="reason" data-aos="fade-up" data-aos-duration="1100">
-                                        <Link to={"/"}>
-                                            <div className="reason_icon" style={{ color: "orange", fontSize: "30px" }}><FcBullish /></div>
-                                            <h6>Giá trị và hiệu quả</h6>
-                                            <p>Chúng tôi cam kết mang đến giá trị thực và hiệu quả cho khách hàng. </p>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </Container>
-
-                        </div>
-                    </div>
-                    <div className="solusion_home" >
-                        <div className="solusion_home_hospital">
-                            <Container className="con_solusion_home">
-
-                                <div className="solusion_home_info">
-                                    <div data-aos="fade-right" data-aos-duration="1000">
-                                        <h2>Giải pháp toàn diện cho bệnh viện</h2>
-                                        <h4 style={{ color: "orange" }}>--- -</h4>
-                                        <p>Chúng tôi cung cấp các giải pháp công nghệ đa dạng cho bệnh viện nhằm nâng cao hiệu quả và đảm bảo an ninh, an toàn cho bệnh nhân và nhân viên y tế. </p>
-                                        <ul>
-                                            <li><Link to={"/giai-phap/chuong-goi-nhan-vien-y-te"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Chuông gọi nhân viên y tế</span></Link></li>
-                                            <li>
-                                                <Link to={"/giai-phap/chuong-bao-trong-nha-ve-sinh"}><BiChevronRight /><span>Chuông báo gọi trong nhà vệ sinh</span></Link></li>
-                                        </ul>
-                                        <ul>
-                                            <li><Link to={"/giai-phap/chuong-bao-khan-cap"}><BiChevronRight /><span>Chuông báo khẩn cấp</span></Link></li>
-                                            <li>
-                                                <Link to={"/giai-phap/he-thong-bao-dong-do"}><BiChevronRight /><span>Hệ thống báo động đỏ</span></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="solusion_home_img" data-aos="fade-left">
-                                    <img src={hospital_solusion_img} />
-                                </div>
-                            </Container>
-                        </div>
-                        <div className="solusion_home_restaurant">
-                            <Container className="con_solusion_home">
-                                <div className="solusion_home_img" data-aos="fade-up">
-                                    <img src={baner_solusion_2} />
-                                </div>
-                                <div className="solusion_home_info" data-aos="fade-left">
-                                    <h2>Giải pháp chuông gọi cho nhà hàng</h2>
-                                    <h4 style={{ color: "orange" }}>--- -</h4>
-                                    <p>Với giải pháp chuông gọi toàn diện của chúng tôi, nhà hàng có thể tận dụng công nghệ để nâng cao hiệu suất hoạt động và mang đến trải nghiệm tốt hơn cho khách hàng. </p>
-                                    <ul>
-                                        <li><Link to={"/giai-phap/chuong-goi-nhan-vien-phuc-vu"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Chuông gọi nhân viên phục vụ</span></Link></li>
-                                    </ul>
-                                    <ul>
-                                        <li><Link to={"/giai-phap/he-thong-goi-so-thu-tu"}><BiChevronRight /><span>Hệ thống gọi số thứ tự</span></Link></li>
-                                    </ul>
-                                </div>
-                            </Container>
-                        </div>
-                        <div className="solusion_home_pager">
-                            <Container className="con_solusion_home">
-                                <div className="solusion_home_info" data-aos="fade-right">
-                                    <h2>Thẻ rung tự phục vụ</h2>
-                                    <h4 style={{ color: "orange" }}>--- -</h4>
-                                    <p>
-                                        Thẻ rung tự phục vụ là một giải pháp công nghệ tiên tiến giúp cải thiện trải nghiệm khách hàng và quản lý dịch vụ trong các ngành công nghiệp như nhà hàng, quán cà phê, quầy phục vụ, quầy thu ngân, nhà sách, và nhiều nơi khác.  </p>
-                                    <ul>
-                                        <li><Link to={"/giai-phap/the-rung-tu-phuc-vu"} style={{ background: "linear-gradient(-45deg, #eb6424, #fbba72)" }}><BiChevronRight /><span>Xem chi tiết</span></Link></li>
-
-                                    </ul>
-
-                                </div>
-                                <div className="solusion_home_img" data-aos="fade-up">
-                                    <img src={hospital_solusion_img} />
-                                </div>
-                            </Container>
-                        </div>
-                    </div>
-                    <div className="solusion_other">
-                        <Container>
-                            <div className="container_solusion_other">
-
-
-                                <div className="title_solusion_other">
-                                    <h2>Các giải pháp khác</h2>
-                                    <p>Chúng tôi cung cấp một loạt các giải pháp công nghệ để nâng cao hiệu suất và trải nghiệm khách hàng. Dưới đây là một số ví dụ về các giải pháp khác mà chúng tôi cung cấp:</p>
-                                </div>
-
-                                <Row>
-                                    {solusions && solusions.slice(0, 4).map((item, index) => (
-                                        <Col xs={6} sm={6} lg={3} md={6} key={index} >
-                                            <div className="solusion_other_con">
-                                                <Link to={"/"} className="solusion_other_con_card" data-aos="fade-right" data-aos-duration="1000">
-                                                    <div className="solusion_other_con_card_img"><img src={item.img_slusion} alt={item.name_slusion} /></div>
-                                                    <div className="solusion_other_con_card_title">
-                                                        <h5>{item ? item.name_slusion : ""}</h5>
-                                                    </div>
-                                                    <div className="solusion_other_con_card_content">
-                                                        <p>{item ? item.short_description_slusion : ""}</p>
-                                                    </div>
-                                                </Link>
+                                                <p className="xemthem">Xem thêm <BsChevronRight /></p>
                                             </div>
-                                        </Col>
-
-                                    ))}
-                                </Row>
-                                <Link to={"/giai-phap"} className="home_button_allsolusion">Xem tất cả <FiChevronsRight /></Link>
-                            </div>
-                        </Container>
-                    </div>
-                    <div className="home_customer_typical" data-aos="fade-up">
-                        <Container>
-                            <div className="home_customer_typical_title" >
-                                <h2>Khách hàng tiêu biểu</h2>
-                            </div>
-                            <div className="home_customer_typical_slider">
-                                <Container className="container_logo_doitac">
-                                    <div className="slider-images">
-                                        {images.map((image, index) => (
-                                            <img
-                                                key={index}
-                                                src={image}
-                                                alt={`Image ${index}`}
-                                                className="logo_doitac"
-                                            />
-                                        ))}
+                                        </Link>
                                     </div>
-                                </Container>
-                            </div>
-                        </Container>
-                    </div>
-                    <div className="home_contact">
-                        <Container className="container_home_contact">
-                            <h4>Chúng tôi cung cấp giải pháp và sản phẩm làm hài lòng khách hàng, và doanh nghiệp của bạn.</h4>
-                            <Link to={"/lien-he"}>Liên hệ ngay</Link>
-                        </Container>
-                    </div>
-                    <div className="blog_home">
-                        <Container>
-                            <div className="container_blog_home">
-                                <div className="title_container_blog_home">
-                                    <h2>Bài viết mới nhất</h2>
-                                    <p>Hướng dẫn sử dung hệ thống và phần mềm giám sát nhiệt độ Dalian.</p>
-                                </div>
-                                <div className="container_home_blog_card">
-                                    {blog && blog.slice(0, 3).map((item, index) => (
-                                        <div className="home_blog_card" data-aos="fade-up" data-aos-duration="1000" key={index}>
-                                            <div className="home_blog_card_img"><img src={item.img_blog} alt={item.name} /></div>
-                                            <div className="home_blog_card_content">
-                                                <h6>{item ? item.name_blog : ""}</h6>
-                                                {/* <p>{item ? item.short_description_blog : ""}</p> */}
-                                                <Link to={`/blog/${item.id}`}  >Xem thêm <FiChevronsRight /></Link>
+
+                                    <div className="rooms_item" data-aos="fade-up" data-aos-duration="700">
+                                        <Link to={"/"}>
+                                            <div className="rooms_item_img"><img src={One_Bedroom} /></div>
+                                            <div className="rooms_item_content">
+                                                <h3>Phòng 2 giường</h3>
+                                                <div className="rooms_item_content_icon">
+                                                    <IoBedOutline className="icon" />
+                                                    <p>2 Bed</p>
+                                                    <MdGroups className="icon" />
+                                                    <p>3-5 Guests</p>
+                                                </div>
+
+                                                <p className="xemthem">Xem thêm <BsChevronRight /></p>
                                             </div>
+                                        </Link>
+                                    </div>
+                                    <div className="rooms_item" data-aos="fade-up" data-aos-duration="900">
+                                        <Link to={"/"}>
+                                            <div className="rooms_item_img"><img src={One_Bedroom} /></div>
+                                            <div className="rooms_item_content">
+                                                <h3>Phòng 3 giường</h3>
+                                                <div className="rooms_item_content_icon">
+                                                    <IoBedOutline className="icon" />
+                                                    <p>3 Bed</p>
+                                                    <MdGroups className="icon" />
+                                                    <p>5-7 Guests</p>
+                                                </div>
+                                                <p className="xemthem">Xem thêm <BsChevronRight /></p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className="rooms_item" data-aos="fade-up" data-aos-duration="1100">
+                                        <Link to={"/"}>
+                                            <div className="rooms_item_img"><img src={One_Bedroom} /></div>
+                                            <div className="rooms_item_content">
+                                                <h3>Phòng King</h3>
+                                                <div className="rooms_item_content_icon">
+                                                    <IoBedOutline className="icon" />
+                                                    <p>1 King Bed</p>
+                                                    <MdGroups className="icon" />
+                                                    <p>1 Guests</p>
+                                                </div>
+
+                                                <p className="xemthem">Xem thêm <BsChevronRight /></p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <p className="con_classify_rooms_viewall"><p>Xem tất cả</p><BsChevronRight /></p>
+                            </Container>
+
+                        </div>
+                    </div>
+
+                    <div className="rooms">
+                        <div className="con_rooms">
+                            <Container>
+                                <div className="rooms_items">
+                                    <div >
+                                        <h1>Căn hộ một giường ngủ</h1>
+                                        <div className="con_rooms_items">
+                                            <Row className="row" data-aos="fade-right">
+                                            {products
+                                                .filter(item => item.type === '1 giường')
+                                                .map((item, index) => (
+                                                    <Col xs={12} sm={12} lg={6} md={6} key={index}>
+                                                        <Card_product product={item} />
+                                                    </Col>
+                                                ))}
+                                            </Row>
                                         </div>
-                                    ))}
+                                        <h5>Xem tất cả <BsChevronRight /></h5>
+                                    </div>
+                                    <div className="rooms_items_homepage">
+                                        <h1>Căn hộ hai giường ngủ</h1>
+                                        <div className="con_rooms_items">
+                                        <Row className="row" data-aos="fade-right">
+                                            {products
+                                                .filter(item => item.type === '2 giường')
+                                                .map((item, index) => (
+                                                    <Col xs={12} sm={12} lg={6} md={6} key={index}>
+                                                        <Card_product product={item} />
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </div>
+                                        <h5>Xem tất cả <BsChevronRight /></h5>
+                                    </div>
+                                    <div className="rooms_items_homepage">
+                                        <h1>Xem thêm các phòng khác</h1>
+                                        <div className="con_rooms_items">
+                                        <Row className="row" data-aos="fade-right">
+                                            {products.map((item, index) => (
+                                                    <Col xs={12} sm={12} lg={6} md={6} key={index}>
+                                                        <Card_product product={item} />
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </div>
+                                        <h5>Xem tất cả <BsChevronRight /></h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </Container>
+                                <div className="advertisement">
+                                    <div className="advertisement_booknow" data-aos="fade-left">
+                                        {/* <DatePickerProvider>
+                                            <Calender />
+                                        </DatePickerProvider> */}
+                                        <Calender />
+                                    </div>
+                                </div>
+                            </Container>
+                        </div>
                     </div>
-
                 </div>
             </main>
-
         </div>
     )
 }

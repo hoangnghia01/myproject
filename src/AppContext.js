@@ -1,33 +1,64 @@
 import { createContext, useState, useEffect } from "react";
 
-import img1 from "../../myproject/src/components/imgs/blog_img/img1.png"
-import img2 from "../../myproject/src/components/imgs/blog_img/img2.png"
-import img3 from "../../myproject/src/components/imgs/blog_img/img3.png"
-import img4 from "../../myproject/src/components/imgs/blog_img/img4.png"
-import img5 from "../../myproject/src/components/imgs/blog_img/img5.png"
-import img6 from "../../myproject/src/components/imgs/blog_img/img6.png"
-import img7 from "../../myproject/src/components/imgs/blog_img/img7.png"
-import img8 from "../../myproject/src/components/imgs/blog_img/goi_y_ta.png"
-import img9 from "../../myproject/src/components/imgs/blog_img/goi_trong_vs.png"
-import img10 from "../../myproject/src/components/imgs/blog_img/bao_khan_cap.jpg"
-import img11 from "../../myproject/src/components/imgs/blog_img/bao_dong_do.jpg"
-import img12 from "../../myproject/src/components/imgs/blog_img/chuong-goi-phuc-vu.png"
-import img13 from "../../myproject/src/components/imgs/blog_img/call_stt.jpg"
-import img14 from "../../myproject/src/components/imgs/blog_img/the_rung.jpg"
+import img1 from "../../mynewproject/src/components/imgs/blog_img/img1.png"
+import img2 from "../../mynewproject/src/components/imgs/blog_img/img2.png"
+import img3 from "../../mynewproject/src/components/imgs/blog_img/img3.png"
+import img4 from "../../mynewproject/src/components/imgs/blog_img/img4.png"
+import img5 from "../../mynewproject/src/components/imgs/blog_img/img5.png"
+import img6 from "../../mynewproject/src/components/imgs/blog_img/img6.png"
+import img7 from "../../mynewproject/src/components/imgs/blog_img/img7.png"
+import img8 from "../../mynewproject/src/components/imgs/blog_img/goi_y_ta.png"
+import img9 from "../../mynewproject/src/components/imgs/blog_img/goi_trong_vs.png"
+import img10 from "../../mynewproject/src/components/imgs/blog_img/bao_khan_cap.jpg"
+import img11 from "../../mynewproject/src/components/imgs/blog_img/bao_dong_do.jpg"
+import img12 from "../../mynewproject/src/components/imgs/blog_img/chuong-goi-phuc-vu.png"
+import img13 from "../../mynewproject/src/components/imgs/blog_img/call_stt.jpg"
+import img14 from "../../mynewproject/src/components/imgs/blog_img/the_rung.jpg"
+import st_100 from "../../mynewproject/src/components/imgs/st-100-w.jpg"
 
-import st_100 from "../../myproject/src/components/imgs/st-100-w.jpg"
-import st_200 from "../../myproject/src/components/imgs/st-200.jpg"
-import st_300 from "../../myproject/src/components/imgs/st-300.jpg"
-import st_300_2b from "../../myproject/src/components/imgs/st3002b.png"
-import st_600 from "../../myproject/src/components/imgs/st600.png"
-import sr_a2003 from "../../myproject/src/components/imgs/sr-2003.jpg"
-import sr_a303 from "../../myproject/src/components/imgs/sra330.jpg"
-import SGP_100R_10C from "../../myproject/src/components/imgs/spg-100.png"
-import GP_200R_10C from "../../myproject/src/components/imgs/gp-200r-10.jpg"
-import GP_101R_10C from "../../myproject/src/components/imgs/gp-101r-10.jpg"
-import SB_700 from "../../myproject/src/components/imgs/sb-700.jpg"
-import SRL_300 from "../../myproject/src/components/imgs/srl200.jpg"
-import logo from "../../myproject/src/components/logo/logo.png"
+import avatar1 from "../../mynewproject/src/imgs/avatar/z4582627996871_279af0f29621f0f292e0e98accfc3da5.jpg"
+import avatar2 from "../../mynewproject/src/imgs/avatar/z4582625498814_386caf976bab8d7d34972ffa8c33eff0.jpg.jpg"
+import avatar3 from "../../mynewproject/src/imgs/avatar/z4582639731288_a072f54b90f144e304b5a61c091b3553.jpg"
+import avatar4 from "../../mynewproject/src/imgs/avatar/z4582635741795_e1f4f46a3ebc24f490a43903b94e85bd.jpg"
+import avatar5 from "../../mynewproject/src/imgs/avatar/z4582648734702_f203dca90f41808797a2fb36eef2fe36.jpg"
+import avatar6 from "../../mynewproject/src/imgs/avatar/z4582678304336_4e0d04d1ac94bf3abc82f4f581c3f166.jpg"
+import avatar7 from "../../mynewproject/src/imgs/avatar/z4582703067844_5b4c9cf1c52ce113d6083cd99c3d9f63.jpg"
+
+const images1 = require.context('../../mynewproject/public/imgs/1', false, /\.(png|jpg|jpeg|gif)$/);
+const imagePaths1 = images1.keys();
+const imageArray1 = imagePaths1.map((imagePath) => images1(imagePath));
+
+
+const images2 = require.context('../../mynewproject/public/imgs/2', false, /\.(png|jpg|jpeg|gif)$/);
+const imagePaths2 = images2.keys();
+const imageArray2 = imagePaths2.map((imagePath) => images2(imagePath));
+
+
+const images3 = require.context('../../mynewproject/public/imgs/2', false, /\.(png|jpg|jpeg|gif)$/);
+const imagePaths3 = images3.keys();
+const imageArray3 = imagePaths3.map((imagePath) => images3(imagePath));
+
+
+const images4 = require.context('../../mynewproject/public/imgs/2', false, /\.(png|jpg|jpeg|gif)$/);
+const imagePaths4 = images4.keys();
+const imageArray4 = imagePaths4.map((imagePath) => images4(imagePath));
+
+
+const images5 = require.context('../../mynewproject/public/imgs/2', false, /\.(png|jpg|jpeg|gif)$/);
+const imagePaths5 = images5.keys();
+const imageArray5 = imagePaths5.map((imagePath) => images5(imagePath));
+
+
+const images6 = require.context('../../mynewproject/public/imgs/2', false, /\.(png|jpg|jpeg|gif)$/);
+const imagePaths6 = images6.keys();
+const imageArray6 = imagePaths6.map((imagePath) => images6(imagePath));
+
+
+const images7 = require.context('../../mynewproject/public/imgs/2', false, /\.(png|jpg|jpeg|gif)$/);
+const imagePaths7 = images7.keys();
+const imageArray7 = imagePaths7.map((imagePath) => images7(imagePath));
+
+
 
 
 
@@ -68,9 +99,7 @@ export const AppProvider = ({ children }) => {
         setBackrgoudNav(false);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -235,190 +264,116 @@ export const AppProvider = ({ children }) => {
   const [products, setProducts] = useState([
     {
       id: 1,
-      name: 'Nút chuông gọi ST-100',
-      price: 10,
-      product_code: 'ST100',
-      img: st_100,
-      label: 'new',
-      type: 'Nut chuong',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-
-
+      name_cdt: 'Lala S2306',
+      name: 'Phòng 2 giường',
+      phone: '0979 534 866',
+      price: '1,400,000',
+      max_guest: 4,
+      soom_space: 32,
+      bed: 2,
+      view: 'Sea',
+      img: avatar1,
+      label: 'view biển',
+      type: '2 giường',
+      img_rooms: imageArray1,
+      description: 'Tiêu chuẩn tối đa cho 4 NL , Giá ngày thường 1.4tr / đêm Giá cuối tuần 1.8tr/ đêm ( thứ 6 và thứ 7) Giá trên ko bao gồm ăn sáng Miễn phí bể bơi và trà nước lọc trong phòng (giá phòng có thể thương lượng theo số người và số ngày ở nếu ở từ 2 đêm trở lên )',
     },
-
     {
       id: 2,
-      name: 'Nút chuông gọi ST-200',
-      price: 10,
-      type: 'Nut chuong',
-      img: st_200,
-      label: 'new',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      product_code: 'ST200',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+      name_cdt: 'Hv D0726 và D0727',
+      name: 'Phòng 2 giường',
+      phone: '0932 208 255',
+      price: '1,400,000',
+      max_guest: 4,
+      soom_space: 32,
+      bed: 2,
+      view: 'Sea',
+      img: avatar2,
+      label: 'view biển',
+      type: '2 giường',
+      img_rooms: imageArray2,
+      description: 'Tiêu chuẩn tối đa cho 4 NL , Giá ngày thường 1.4tr / đêm Giá cuối tuần 1.8tr/ đêm ( thứ 6 và thứ 7) Giá trên ko bao gồm ăn sáng Miễn phí bể bơi và trà nước lọc trong phòng (giá phòng có thể thương lượng theo số người và số ngày ở nếu ở từ 2 đêm trở lên )',
     },
     {
       id: 3,
-      name: 'Nút chuông gọi ST-300',
-      price: 10,
-      type: 'Nut chuong',
-      img: st_300,
-      label: 'new',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      product_code: 'ST300',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-
-
+      name_cdt: 'Huyen Shopmeou M1222 ',
+      name: 'Phòng 1 giường',
+      phone: '0906 303 486',
+      price: '1,200,000', 
+      max_guest: 3,
+      soom_space: 28,
+      bed: 1,
+      view: 'Sea',
+      img: avatar3,
+      label: 'view biển',
+      type: '1 giường',
+      img_rooms: imageArray3,
+      description: '1 ghế sofa - view biển và nội khu',
     },
     {
       id: 4,
-      name: 'Nút chuông gọi ST-300-2B',
-      price: 10,
-      type: 'Nut chuong',
-      img: st_300_2b,
-      // label:'new',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      product_code: 'ST-300-2B',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-
-
+      name_cdt: 'Huyen Shopmeou M1222 ',
+      name: 'Phòng 1 giường',
+      phone: '0778 033 799',
+      price: '1,200,000', 
+      max_guest: 3,
+      soom_space: 28,
+      bed: 1,
+      view: 'Sea',
+      img: avatar4,
+      label: 'view biển',
+      type: '1 giường',
+      img_rooms: imageArray4,
+      description: '1 ghế sofa - view biển và nội khu',
     },
     {
       id: 5,
-      name: 'Nút chuông gọi ST-600',
-      price: 10,
-      product_code: 'ST600',
-      img: st_600,
-      label: 'new',
-      type: 'Nut chuong',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+      name_cdt: 'Thân Thương M21.18',
+      name: 'Phòng 1 giường',
+      phone: '0908 199 200',
+      price: '1,200,000',
+      max_guest: 3,
+      soom_space: 28,
+      bed: 1,
+      view: 'Sea',
+      img: avatar5,
+      label: 'view biển',
+      type: '1 giường',
+      img_rooms: imageArray5,
+      description: 'Nội thất chủ đầu tư',
     },
     {
       id: 6,
-      name: 'Màn hình hiển thị SR-A2003',
-      price: 10,
-      product_code: 'SRA2003',
-      img: sr_a2003,
-      label: 'new',
-      type: 'Man hinh',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+      name_cdt: 'Tran Ngoc Tuyet M0202 và M0203',
+      name: 'Phòng 2 giường',
+      phone: '0908 645 078',
+      price: '1,400,000',
+      max_guest: 4,
+      soom_space: 32,
+      bed: 2,
+      view: 'Sea',
+      img: avatar6,
+      label: 'view biển',
+      type: '2 giường',
+      img_rooms: imageArray6,
+      description: 'Có thể ghép lại thành 1 giường 2.4m. Nội thất của chủ đầu tư ',
     },
     {
       id: 7,
-      name: 'Màn hình hiển thị SR-A303',
-      price: 10,
-      product_code: 'SRA303',
-      img: sr_a303,
-      label: 'new',
-      type: 'Man hinh',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
+      name_cdt: 'Dinhnga S1604',
+      name: 'Phòng 2 giường',
+      phone: '0986 674 660',
+      price: '1,400,000',
+      max_guest: 4,
+      soom_space: 32,
+      bed: 2,
+      view: 'Sea',
+      img: avatar7,
+      label: 'view biển',
+      type: '2 giường',
+      img_rooms: imageArray7,
+      description: 'Tiêu chuẩn tối đa cho 4 NL , Giá ngày thường 1.4tr / đêm Giá cuối tuần 1.8tr/ đêm ( thứ 6 và thứ 7) Giá trên ko bao gồm ăn sáng Miễn phí bể bơi và trà nước lọc trong phòng (giá phòng có thể thương lượng theo số người và số ngày ở nếu ở từ 2 đêm trở lên )',
     },
-    {
-      id: 8,
-      name: 'Bộ thẻ rung SGP-100R-10C',
-      price: 10,
-      product_code: 'SGP-100R-10C',
-      img: SGP_100R_10C,
-      label: 'new',
-      type: 'The rung',
-      img_product: logo,
-      brand: 'Syscall',
-      origin: 'Korea',
-      quantity: 10,
-      short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-      description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-    },
-    {id: 9,
-    name: 'Bộ thẻ rung GP-200R-10C',
-    price: 50,
-    product_code: 'GP-200R-10C',
-    img: GP_200R_10C,
-    label: '',
-    type: 'The rung',
-    img_product: logo,
-    brand: 'Syscall',
-    origin: 'Korea',
-    quantity: 10,
-    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-  },
-  {id: 10,
-    name: 'Bộ thẻ rung GP-101R-10C',
-    price: 50,
-    product_code: 'GP-101R-10C',
-    img: GP_101R_10C,
-    label: 'hot',
-    type: 'The rung',
-    img_product: logo,
-    brand: 'Syscall',
-    origin: 'Korea',
-    quantity: 10,
-    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-  },
-  {id: 11,
-    name: 'Đèn báo SRL 300',
-    price: 50,
-    product_code: 'SRL-300',
-    img: SRL_300,
-    label: 'new',
-    type: 'Den bao',
-    img_product: logo,
-    brand: 'Syscall',
-    origin: 'Korea',
-    quantity: 10,
-    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-  },
-  {id: 11,
-    name: 'Đồng hồ SB 700',
-    price: 20,
-    product_code: 'SB-700',
-    img: SB_700,
-    label: 'new',
-    type: 'Dong ho',
-    img_product: logo,
-    brand: 'Syscall',
-    origin: 'Korea',
-    quantity: 10,
-    short_description: 'Thẻ rung có kích thước nhỏ gọn nằm gọn trong một bàn tay Nhôm được áp dụng cho bộ phận sạc làm cho thiết kế của nó sang trọng hơn.Tăng dung lượng pin và chức năng sạc nhanh.',
-    description: 'Trạng thái sạc có thể nhận biết được với đèn LED khác nhau (Đỏ: Đang sạc, Xanh lam: Đã hoàn thành)Sạc dễ dàng theo mọi hướng mà không cần phân biệt tới lui trên SGP-100R.Dễ dàng vệ sinh ổ cắm sạc với vỏ sau có thể tháo rời bằng nam châm. Đệm chống trượt ở phía dưới giúp cố định và di chuyển sản phẩm dễ dàng.',
-  },
-  
-
-    
   ])
 
   useEffect(() => {
@@ -430,7 +385,6 @@ export const AppProvider = ({ children }) => {
 
 
   const [cart, setCart] = useState([])
-
   const addCart = (id) => {
     const kq = products.find((item) => item.id == id)
     const index = cart.findIndex((item) => item.id == id)
@@ -445,14 +399,11 @@ export const AppProvider = ({ children }) => {
       localStorage.setItem('cart_list', JSON.stringify([...cart, { ...kq, qty: "1" }]))
     }
   }
-
-
   const delete1 = (id) => {
     const kq = cart.filter((item) => item.id !== id)
     setCart(kq)
     localStorage.setItem('cart_list', JSON.stringify(kq))
   }
-
   const changqty = (id, num) => {
     const kq = cart.map((item) => item.id == id && !(num == -1 && item["qty"] == 1) ? { ...item, qty: item["qty"] * 1 + num }
       // && !(item[]
@@ -461,7 +412,6 @@ export const AppProvider = ({ children }) => {
     setCart(kq)
     localStorage.setItem('cart_list', JSON.stringify(kq))
   };
-
   const quanlity = (cart.length)
   
 

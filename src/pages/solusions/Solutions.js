@@ -16,20 +16,16 @@ export default function Solutions() {
       };
       const [currentPage, setCurrentPage] = useState(1); 
       const itemsPerPage = 8; // Số sản phẩm hiển thị trên mỗi trang
-  
       // Tính chỉ mục sản phẩm bắt đầu và kết thúc trên mỗi trang
       const indexOfLastItem = currentPage * itemsPerPage;
       const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  
       // Lấy danh sách sản phẩm trên trang hiện tại
       const currentItems = solusions.slice(indexOfFirstItem, indexOfLastItem);
-  
       // Tạo danh sách các trang
       const pageNumbers = [];
       for (let i = 1; i <= Math.ceil(solusions.length / itemsPerPage); i++) {
           pageNumbers.push(i);
       }
-  
       // Chuyển đến trang được chọn
       const handleClick = (pageNumber) => {
           setCurrentPage(pageNumber);

@@ -1,0 +1,66 @@
+.image-slider {
+  text-align: center;
+  background-color: #f4f4f4;
+  /* padding: 20px; */
+  /* width: 50%; */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  /* Thêm opacity tại đây hoặc tạo một phần tử mới bọc .slider-container */
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  /* height: 100vh; */
+}
+
+.slides-container {
+  width: 100%;
+  display: flex;
+  transition: transform 1s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+  
+}
+
+.slides-container img {
+  width: 100%;
+  /* height: auto; */
+  /* object-fit: cover;  */
+}
+
+.slider-container .Previous,
+.slider-container .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  /* Thêm transition cho opacity */
+}
+
+.slider-container .Previous {
+  left: 10px;
+}
+
+.slider-container .next {
+  right: 10px;
+}
+
+.slider-container:hover .Previous,
+.slider-container:hover .next {
+  opacity: 1;
+}
