@@ -1,25 +1,27 @@
-.baner_contact{
+.baner_contact {
     width: 100%;
     height: 50vh;
     border-radius: 20px;
     display: flex;
     align-items: center;
     text-align: center;
-    
+
 }
-.baner_contact h1{
+
+.baner_contact h1 {
     font-size: 70px;
     color: #000000;
 }
 
-.info_contact{
+.info_contact {
     width: 100%;
-    
+
     border-radius: 20px;
     background: #fff;
-    
+
 }
-.info_contact .container{
+
+.info_contact .container {
     width: 100%;
     height: 50vh;
     border-radius: 20px;
@@ -27,16 +29,16 @@
     align-items: center;
     background: #fff;
     justify-content: space-between;
-    
+
 }
 
-.info_contact .contact{
+.info_contact .contact {
     width: 30%;
     /* border: 1px solid red; */
     padding: 20px;
 }
 
-.info_contact .contact .contact_icon{
+.info_contact .contact .contact_icon {
     width: 100px;
     height: 100px;
     display: flex;
@@ -48,59 +50,68 @@
     color: #fff;
 }
 
-.info_contact .contact h3{
+.info_contact .contact h3 {
     margin: 20px 0;
 }
-.form_contact{
+
+.form_contact {
     width: 50%;
-    
+
 }
-.form_label{
+
+.form_label {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
     line-height: 30px;
 }
-.form_label h2{
+
+.form_label h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    
+
 }
-.form_label h5{
+
+.form_label h5 {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
-    
+
 }
-.container_form{
-width: 100%;
-justify-content: center;
-align-items: center;
-display: flex;
-padding: 50px 0;
+
+.container_form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px 0;
 }
-.form_group{
+
+.form_group {
     margin-bottom: 30px;
     display: flex;
     width: 80%;
     flex-direction: column;
     border: none;
 }
-.form_group input{
+
+.form_group input {
     background: #f3f3f3;
     border: none;
     padding: 15px 10px;
     border-radius: 5px;
 }
 
-.form_control{
+.form_control {
     height: 50px;
 }
-.form_control_mes{
+
+.form_control_mes {
     height: 100px;
 }
-.submit_form{
+
+.submit_form {
     background: linear-gradient(-45deg, #eb6424, #fbba72);
     color: #fff;
     border-radius: 25px 0 25px 25px;
@@ -108,23 +119,25 @@ padding: 50px 0;
     height: 50px;
     border: none;
 }
-.form_contact_input{
-display: flex;
-width: 100%;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+
+.form_contact_input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.form_contact_input textarea{
+.form_contact_input textarea {
     height: 100px;
-    padding: 10px ;
+    padding: 10px;
     background: #f3f3f3;
     border: none;
     padding: 15px 10px;
     border-radius: 5px;
 }
-.button_send{
+
+.button_send {
     width: 150px;
     color: #fff;
     border: none;
@@ -133,18 +146,21 @@ flex-direction: column;
     cursor: pointer;
     border-radius: 5px;
 }
+
 @media only screen and (max-width: 1200px) {
     .form_contact {
         width: 80%;
     }
+}
+
+@media only screen and (max-width: 992px) {
+    .form_contact {
+        width: 100%;
     }
-    @media only screen and (max-width: 992px) {
-        .form_contact {
-            width: 100%;
-        }
-        .info_contact .container{
-            display: block;
-            height: 100vh;
-        }
-        
-        }
+
+    .info_contact .container {
+        display: block;
+        height: 100vh;
+    }
+
+}

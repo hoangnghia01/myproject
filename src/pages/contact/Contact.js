@@ -59,21 +59,21 @@ function Contact() {
                 <Container>
                     <div className='contact'>
                         <div className='contact_icon'>
-                            <AiOutlinePhone/>
+                            <AiOutlinePhone />
                         </div>
                         <h3>Phone</h3>
                         <h6>097 977 2145</h6>
                     </div>
                     <div className='contact'>
                         <div className='contact_icon'>
-                            <MdOutlineMail/>
+                            <MdOutlineMail />
                         </div>
                         <h3>Email</h3>
                         <h6>datphongmuine@gmail.com</h6>
                     </div>
                     <div className='contact'>
                         <div className='contact_icon'>
-                            <CiLocationOn/>
+                            <CiLocationOn />
                         </div>
                         <h3>Location</h3>
                         <h6>097 977 2145</h6>

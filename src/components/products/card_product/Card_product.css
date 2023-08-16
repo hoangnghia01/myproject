@@ -90,6 +90,7 @@
     flex-direction: column;
     /* width: 45%; */
 }
+
 .rooms_card .rooms_card_item {
     width: 100%;
     height: 300px;
@@ -102,9 +103,11 @@
     overflow: hidden;
     position: relative;
 }
-.rooms_card .rooms_card_item img{
-width: 100%;
+
+.rooms_card .rooms_card_item img {
+    width: 100%;
 }
+
 .rooms_card .rooms_card_item .rooms_card_item_content {
     padding: 5px 20px;
 }
@@ -114,7 +117,7 @@ width: 100%;
     top: 100%;
     left: 0;
     width: 100%;
-    
+
     color: #000;
     text-decoration: none;
     margin: 0;
@@ -125,15 +128,17 @@ width: 100%;
     display: flex;
     align-items: center;
 }
-.rooms_card_item_content p{
+
+.rooms_card_item_content p {
     margin: 0;
     padding: 0;
-    
+
 }
+
 .rooms_card .rooms_card_item:hover .rooms_card_item_content {
     opacity: 1;
     transform: translateY(-100%);
-    
+
 }
 
 /* .rooms_card_item_content .rooms_card_xemthem::before {
